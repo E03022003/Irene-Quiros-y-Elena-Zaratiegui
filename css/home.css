@@ -1,0 +1,7 @@
+.head {
+    width: 1411px;
+    height: 1013px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 2px solid #FC4712;
+}
