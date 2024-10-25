@@ -13,7 +13,7 @@
     <!-- CSS AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/restaurante.css" />
 
     <!-- JQUERY -->
@@ -59,14 +59,21 @@
               <i class="bi bi-search" style="font-size: 1.5rem; color: var(--clr-light);"></i>
             </button>
             <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
-          </form>
-
+        </form>
     </div>
 </nav>
 
-<!-- Imágen portada -->
-<img src="img/pexels-pixabay-262978.jpg" class="img-fluid" alt="...">
 
+
+<div id="portada" class="container-fluid text-center">
+    <h1>LLAGAR LA LLOBERA</h1>
+    <img src="img/portada-restaurante.jpg" class="img-fluid object-fit-cover" alt="...">
+</div>
+
+
+
+
+<!-- Galería -->
 <section class="photo-gallery p-4">
     <div class="container py-4">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
@@ -89,33 +96,46 @@
     </div>
 </section>
 
-<div id="cards" class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="https://picsum.photos/seed/picsum/100/100" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="https://picsum.photos/seed/picsum/100/100" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="https://picsum.photos/seed/picsum/100/100" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
+<div class="grid gap-3" style="background-color: aqua;">
+    <div class="p-2 g-col-6" style="background-color: brown;">Grid item 1</div>
+    <div class="p-2 g-col-6" style="background-color: chartreuse;">Grid item 2</div>
+    <div class="p-2 g-col-6" style="background-color: coral;">Grid item 3</div>
+    <div class="p-2 g-col-6" style="background-color: hotpink;">Grid item 4</div>
+  </div>
+
+<!-- Cards -->
+<div class="container text-center">
+    <div class="row" style="background-color: aquamarine;">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
     </div>
   </div>
 

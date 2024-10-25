@@ -1,3 +1,10 @@
+.navbar {
+    border-radius: 25px 25px 0px 0px;
+    border: 2px solid #000000;
+    margin-top: 0.5em;
+    margin: 0.5em;
+}
+
 #search-form {
     position: relative;
     display: flex;
@@ -32,14 +39,19 @@
 }
 
 body {
-    padding-top: 60px; 
+    padding-top: 90px; 
 }
 
-#cards {
-    width: 90%;
-    overflow: hidden !important;
-    padding: 0;
+#portada {
+    height: 85vh;
 }
+
+.img-fluid {
+    height: 80vh;
+    width: 100%;
+}
+
+
 
 
 
