@@ -1,3 +1,4 @@
+// NAVBAR
 $(document).ready(function () {
     // Al hacer clic en el icono de búsqueda
     $('#search-icon').on('click', function (event) {
@@ -20,7 +21,7 @@ $(document).ready(function () {
     });
 });
 
-// burbuja para bajar y subir
+// BURBUJA PARA BAJAR Y SUBIR
 $(document).ready(function() {
     const bubble = $('#scrollToTop');
     const bubbleIcon = $('#bubbleIcon');
