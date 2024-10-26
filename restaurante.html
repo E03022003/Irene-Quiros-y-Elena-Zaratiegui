@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
@@ -25,12 +29,13 @@
 
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+ <div class="navbar-wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
 
     <div class="container-fluid">
         <!-- Logotipo -->
         <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Logotipo" height="40">
+            <img src="img/logo1.png" alt="Logotipo" height="35">
         </a>
 
         <!-- Botón hamburguesa -->
@@ -56,51 +61,52 @@
         <!-- lupa -->
         <form class="d-flex align-items-center" id="search-form">
             <button class="btn" id="search-icon" type="button">
-                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--clr-light);"></i>
+                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
             </button>
             <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
         </form>
     </div>
-</nav>
-
-
-
-<div id="portada" class="container-fluid text-center">
-    <h1>LLAGAR LA LLOBERA</h1>
-    <img src="img/portada-restaurante.jpg" class="img-fluid object-fit-cover" alt="...">
+    </nav>
 </div>
 
+<!-- PORTADA -->
+<div id="portada" class="container-fluid text-center">
+    <h1>LLAGAR LA LLOBERA</h1>
+    <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid object-fit-cover" alt="...">
+</div>
 
-
+<div class="bubble" id="scrollToTop" style="display: none;">
+    <i class="bi bi-chevron-up"></i>
+</div>
 
 <!-- Galería -->
-<section class="photo-gallery p-4">
-    <div class="container py-4">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
-            <div class="col">
-                <a class="gallery-item" href="https://picsum.photos/id/251/1200/800.webp">
-                    <img src="https://picsum.photos/id/251/480/320.webp" class="img-fluid" alt="Lorem ipsum dolor sit amet">
-                </a>
+<div  class="container-fluid">
+    <h2>LLAGAR LA LLOBERA</h2>
+    <div id="galeria" class="container">
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-4">
+                <div class="image-wrapper">
+                    <img src="img/comida1.jpg" alt="Comida 1" class="img-fluid object-fit-cover rounded">
+                    <div class="overlay">CACHOPO</div>
+                </div>
             </div>
-            <div class="col">
-                <a class="gallery-item" href="https://picsum.photos/id/678/1200/800.webp">
-                    <img src="https://picsum.photos/id/678/480/320.webp" class="img-fluid" alt="Ipsum lorem dolor sit amet">
-                </a>
+            <!-- Imagen 2 -->
+            <div class="col-4">
+                <div class="image-wrapper">
+                    <img src="img/comida2.jpeg" alt="Comida 2" class="img-fluid object-fit-cover rounded">
+                    <div class="overlay">PULPO</div>
+                </div>
             </div>
-            <div class="col">
-                <a class="gallery-item" href="https://picsum.photos/id/74/1200/800.webp">
-                    <img src="https://picsum.photos/id/74/480/320.webp" class="img-fluid" alt="Dolor lorem ipsum sit amet">
-                </a>
+            <!-- Imagen 3 -->
+            <div class="col-4">
+                <div class="image-wrapper">
+                    <img src="img/comida3.jpg" alt="Comida 3" class="img-fluid object-fit-cover rounded">
+                    <div class="overlay">CARNE</div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-
-<div class="grid gap-3" style="background-color: aqua;">
-    <div class="p-2 g-col-6" style="background-color: brown;">Grid item 1</div>
-    <div class="p-2 g-col-6" style="background-color: chartreuse;">Grid item 2</div>
-    <div class="p-2 g-col-6" style="background-color: coral;">Grid item 3</div>
-    <div class="p-2 g-col-6" style="background-color: hotpink;">Grid item 4</div>
 </div>
 
 <!-- Cards -->
