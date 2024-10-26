@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
+
     <!-- Tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,40 +33,40 @@
  <div class="navbar-wrapper">
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
 
-    <div class="container-fluid">
-        <!-- Logotipo -->
-        <a class="navbar-brand" href="#">
-            <img src="img/logo1.png" alt="Logotipo" height="35">
-        </a>
+        <div class="container-fluid">
+            <!-- Logotipo -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo1.png" alt="Logotipo" height="35">
+            </a>
 
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- botones -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">NOVEDADES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CATEGORÍA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CHEF'S KISS</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- lupa -->
-        <form class="d-flex align-items-center" id="search-form">
-            <button class="btn" id="search-icon" type="button">
-                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
-        </form>
-    </div>
+
+            <!-- Botones -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">NOVEDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CATEGORÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CHEF'S KISS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lupa -->
+            <form class="d-flex align-items-center" id="search-form">
+                <button class="btn" id="search-icon" type="button">
+                    <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
+                </button>
+                <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
+            </form>
+        </div>
     </nav>
 </div>
 
@@ -73,10 +74,12 @@
 <div id="portada" class="container-fluid text-center">
     <h1>LLAGAR LA LLOBERA</h1>
     <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid object-fit-cover" alt="...">
-</div>
+    <!-- Burbuja -->
+    <div class="bubble" id="scrollToTop" style="display: none;">
+        <span id="bubbleIcon"><i class="bi bi-arrow-down-circle"></i></span> 
+    </div>
 
-<div class="bubble" id="scrollToTop" style="display: none;">
-    <i class="bi bi-chevron-up"></i>
+</div>
 </div>
 
 <!-- Galería -->
