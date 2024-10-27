@@ -179,3 +179,23 @@ h2 {
     height: 7em;
     width: auto;
 }
+
+/*explicación del resturante */
+.sticker {
+    position: absolute;
+    background-color:var(--color-4);
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: var(--color-6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Posicionamiento pegatina */
+.sticker-1 { top: 10%; left: 15%; }
+.sticker-2 { top: 50%; left: 10%; }
+.sticker-3 { bottom: 20%; right: 20%; }
+.sticker-4 { top: 20%; right: 10%; }

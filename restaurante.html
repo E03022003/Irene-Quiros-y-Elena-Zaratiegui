@@ -38,7 +38,7 @@
 
         <div class="container-fluid">
             <!-- Logotipo -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/logo1.png" alt="Logotipo" height="35">
             </a>
 
@@ -145,11 +145,68 @@
     </div>
 </div>
 
+<!-- Sección del Restaurante -->
+<section class="container my-5">
+    <div class="row">
+        <!--reservar -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <p>En nuestro restaurante encontrarás una experiencia culinaria única, con platos de alta calidad y un ambiente acogedor. ¡Ven a visitarnos y disfruta de una comida inolvidable!</p>
+            <!-- Botón -->
+            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#reservaModal">Reservar</button>
+        </div>
+
+        <!-- Imagen con pegatinas -->
+        <div class="col-md-6 position-relative">
+            <img src="img/comida3.jpg" alt="Imagen del Restaurante" class="img-fluid">
+            <!-- Pegatinas intento -->
+            <div class="sticker sticker-1">Delicioso</div>
+            <div class="sticker sticker-2">Ambiente único</div>
+            <div class="sticker sticker-3">Familiar</div>
+            <div class="sticker sticker-4">Top Chef</div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Reserva -->
+<div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reservaModalLabel">Formulario de Reserva</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha de Reserva</label>
+                        <input type="date" class="form-control" id="fecha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="personas" class="form-label">Número de Personas</label>
+                        <input type="number" class="form-control" id="personas" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <!-- Cards -->
 <div class="container text-center">
     <div class="row" style="background-color: aquamarine;">
         <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; background-color: rgb(234, 127, 255);">
                 <img src="img/logo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -159,7 +216,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; background-color: rgb(234, 127, 255);">
                 <img src="img/logo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -169,7 +226,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; background-color: rgb(234, 127, 255);">
                 <img src="img/logo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
