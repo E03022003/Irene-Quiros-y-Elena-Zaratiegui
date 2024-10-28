@@ -46,5 +46,9 @@ $(document).ready(function() {
     });
 });
 
+// POPOVER
+$(document).ready(function () {
+    $('[data-bs-toggle="popover"]').popover();
+});
 
 
