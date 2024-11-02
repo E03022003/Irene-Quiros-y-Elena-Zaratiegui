@@ -8,6 +8,7 @@
 }
 
 
+
 /* TIPOGRAFÍA */
 h1 {
     text-align: center;
@@ -94,6 +95,10 @@ h2 {
     opacity: 1;
 }
 
+/* CONTENEDOR */
+.container-fluid {
+    padding: 0 !important;
+}
 
 /* PORTADA */
 #portada {
@@ -101,14 +106,12 @@ h2 {
     height: 100vh;
 }
 
-#img-portada {
-   height: 32em; 
-}
-
-.img-fluid {
+.background-image {
     width: 100%;
+    height: auto;
+    max-height: 515px;
+    object-fit: cover;
 }
-
 
 /* BURBUJA */
 .bubble {

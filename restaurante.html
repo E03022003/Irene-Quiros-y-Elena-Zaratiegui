@@ -33,6 +33,8 @@
 </head>
 
 <body>
+
+<header>
 <!-- Navbar -->
     <div class="navbar-wrapper">
         <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
@@ -75,17 +77,20 @@
     </div>
 
 <!-- PORTADA -->
-    <div id="portada" class="container-fluid text-center">
+    <section id="portada" class="container-fluid text-center">
         <h1>LLAGAR LA LLOBERA</h1>
-        <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid object-fit-cover" alt="...">
+        <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image" alt="...">
         <!-- Burbuja -->
         <div class="bubble" id="scrollToTop" style="display: none;">
-            <span id="bubbleIcon"><i class="bi bi-arrow-down-circle"></i></span> 
+            <span id="bubbleIcon">
+                <i class="bi bi-arrow-down-circle"></i>
+            </span> 
         </div>
-    </div>
+    </section>
+</header>
 
 <!-- Galería -->
-    <div  class="container-fluid">
+    <section  class="container-fluid">
         <div id="galeria" class="container">
             <h2>RECOMENDACIONES</h2>
             <div class="row">
@@ -115,7 +120,7 @@
     </div>
 
 <!-- Características del Restaurante -->
-    <div class="container my-5">
+    <section class="container my-5">
         <div class="row text-center">
             <div class="col-md-3 mb-4">
                 <div class="icon-wrapper">
@@ -142,7 +147,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!-- Sección del Restaurante -->
     <section class="container my-5">
@@ -167,7 +172,7 @@
     </section>
 
 <!-- Modal de Reserva -->
-    <div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+    <section class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -197,7 +202,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!-- Info restaurante -->
     <section class="container my-5">
@@ -271,6 +276,6 @@
 
 <!-- JAVASCRIPT -->
      <script src="js/script.js"></script>
-     
+
 </body>
 </html>
