@@ -7,8 +7,6 @@
     --color-6: white;
 }
 
-
-
 /* TIPOGRAFÍA */
 h1 {
     text-align: center;
@@ -31,7 +29,6 @@ h2 {
     padding-top: 0.2em;
 }
 
-
 /* NAVBAR */
 .navbar-wrapper {
     position: fixed;
@@ -48,6 +45,7 @@ h2 {
     border: 2px solid var(--color-4);
     margin-top: 0.5em;
     margin: 0.5em;
+    width: 100%;
 }
 
 .navbar .nav-link {
@@ -95,21 +93,15 @@ h2 {
     opacity: 1;
 }
 
-/* CONTENEDOR */
-.container-fluid {
-    padding: 0 !important;
-}
-
 /* PORTADA */
 #portada {
-    padding-top: 60px;
+    padding-top: 65px;
     height: 100vh;
 }
 
 .background-image {
-    width: 100%;
     height: auto;
-    max-height: 515px;
+    max-height: 75vh;
     object-fit: cover;
 }
 
@@ -150,7 +142,7 @@ h2 {
 
 .image-wrapper {
     position: relative;
-    margin: 0.5em;
+    
     overflow: visible; /* Permite que el overlay sobresalga de la imagen */
     border-radius: 8px;
 }
@@ -166,8 +158,8 @@ h2 {
 
 .overlay {
     position: absolute;
-    bottom: -25px; 
-    right: -25px;  
+    bottom: -20px; 
+    right: -20px;  
     background-color: var(--color-4);
     color: white;
     padding: 5px 10px;
@@ -279,3 +271,4 @@ footer {
     padding-top: 10px;
     text-align: center;
 }
+
