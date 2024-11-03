@@ -7,6 +7,14 @@
     --color-6: white;
 }
 
+body {
+    overflow-x: hidden;
+    background-color: aquamarine;
+}
+
+html {
+    background-color: rgb(255, 0, 0);
+}
 /* TIPOGRAFÍA */
 h1 {
     text-align: center;
@@ -30,7 +38,7 @@ h2 {
 }
 
 /* NAVBAR */
-.navbar-wrapper {
+/* .navbar-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,6 +46,7 @@ h2 {
     z-index: 999; 
     background-color:var(--color-6); 
     height: 75px; 
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -89,7 +98,7 @@ h2 {
 }
 
 #search-input.active {
-    width: 200px; /* Ancho abierto */
+    width: 200px; /* Ancho abierto 
     opacity: 1;
 }
 

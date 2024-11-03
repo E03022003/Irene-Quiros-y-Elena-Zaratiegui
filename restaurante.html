@@ -33,289 +33,277 @@
 </head>
 
 <body>
-    
-    <body>
 
-        <header class="w-100 m-0">
-        <!-- Navbar -->
-            <div class="navbar-wrapper w-100 m-0">
-                <nav class="navbar navbar-expand-lg fixed-top bg-white w-100 m-0">
-        
-                    <div class="container-fluid w-100">
-                        <!-- Logotipo -->
-                        <a class="navbar-brand" href="index.html">
-                            <img src="img/logo1.png" alt="Logotipo" height="35">
-                        </a>
-        
-                        <!-- Botón hamburguesa -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-        
-                        <!-- Botones -->
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">NOVEDADES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">CATEGORÍA</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">CHEF'S KISS</a>
-                                </li>
-                            </ul>
-                        </div>
-        
-                        <!-- Lupa -->
-                        <form class="d-flex align-items-center" id="search-form">
-                            <button class="btn" id="search-icon" type="button">
-                                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
-                            </button>
-                            <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
-                        </form>
-                    </div>
-                </nav>
+<header>
+<!-- Navbar -->
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+
+            <div class="container-fluid">
+                <!-- Logotipo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo1.png" alt="Logotipo" height="35">
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Botones -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CATEGORÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CHEF'S KISS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lupa -->
+                <form class="d-flex align-items-center" id="search-form">
+                    <button class="btn" id="search-icon" type="button">
+                        <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
+                    </button>
+                    <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
+                </form>
             </div>
-        </header>
-        
-        <!-- PORTADA -->
-            <section id="portada" class="container-fluid text-center">
-                <h1>LLAGAR LA LLOBERA</h1>
-                <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image w-100" alt="...">
-                <!-- Burbuja -->
-                <div class="bubble" id="scrollToTop" style="display: none;">
-                    <span id="bubbleIcon">
-                        <i class="bi bi-arrow-down-circle"></i>
-                    </span> 
-                </div>
-            </section>
-        
-        <!--  Galería 
-            <section  class="container-fluid">
-                <div id="galeria" class="container">
-                    <h2>RECOMENDACIONES</h2>
-                    <div class="row">
-                         Imagen 1 
-                        <div class="col-4 m-0">
-                            <div class="image-wrapper">
-                                <img src="img/cachopo1.jpg" alt="Comida 1" class="img-fluid object-fit-cover rounded">
-                                <div class="overlay">CACHOPO</div>
-                            </div>
-                        </div>
-                         Imagen 2 
-                        <div class="col-4 m-0">
-                            <div class="image-wrapper">
-                                <img src="img/comida2.jpeg" alt="Comida 2" class="img-fluid object-fit-cover rounded">
-                                <div class="overlay">PULPO</div>
-                            </div>
-                        </div>
-                         Imagen 3 
-                        <div class="col-4 m-0">
-                            <div class="image-wrapper">
-                                <img src="img/comida3.jpg" alt="Comida 3" class="img-fluid object-fit-cover rounded">
-                                <div class="overlay">CARNE</div>
-                            </div>
-                        </div>
+        </nav>
+    </div>
+</header>
+
+<!-- PORTADA -->
+    <section id="portada" class="container-fluid text-center">
+        <h1>LLAGAR LA LLOBERA</h1>
+        <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image" alt="...">
+        <!-- Burbuja -->
+        <div class="bubble" id="scrollToTop" style="display: none;">
+            <span id="bubbleIcon">
+                <i class="bi bi-arrow-down-circle"></i>
+            </span> 
+        </div>
+    </section>
+
+<!-- Galería -->
+    <section  class="container-fluid">
+        <div id="galeria" class="container">
+            <h2>RECOMENDACIONES</h2>
+            <div class="row">
+                <!-- Imagen 1 -->
+                <div class="col-4">
+                    <div class="image-wrapper">
+                        <img src="img/comida1.jpg" alt="Comida 1" class="img-fluid object-fit-cover rounded">
+                        <div class="overlay">CACHOPO</div>
                     </div>
                 </div>
-            </section> -->
-        
-            <div class="container">
-                <div class="row">
-                    <div class="col-1 border text-center p-2">1</div>
-                    <div class="col-1 border text-center p-2">2</div>
-                    <div class="col-1 border text-center p-2">3</div>
-                    <div class="col-1 border text-center p-2">4</div>
-                    <div class="col-1 border text-center p-2">5</div>
-                    <div class="col-1 border text-center p-2">6</div>
-                    <div class="col-1 border text-center p-2">7</div>
-                    <div class="col-1 border text-center p-2">8</div>
-                    <div class="col-1 border text-center p-2">9</div>
-                    <div class="col-1 border text-center p-2">10</div>
-                    <div class="col-1 border text-center p-2">11</div>
-                    <div class="col-1 border text-center p-2">12</div>
-                </div>
-            </div>
-        
-            <section class="container-fluid my-5">
-                <div id="galeria" class="row g-5"> 
-                    <h2 class="text-md-start w-100 mb-4">RECOMENDACIONES</h2>
-            
-                    <!-- Imagen 1 -->
-                    <div class="col-12 col-md-4">
-                        <div class="image-wrapper">
-                            <img src="img/cachopo1.jpg" alt="Comida 1" class="img-fluid w-100 object-fit-cover rounded">
-                            <div class="overlay">CACHOPO</div>
-                        </div>
-                    </div>
-            
-                    <!-- Imagen 2 -->
-                    <div class="col-12 col-md-4">
-                        <div class="image-wrapper">
-                            <img src="img/comida2.jpeg" alt="Comida 2" class="img-fluid w-100 object-fit-cover rounded">
-                            <div class="overlay">PULPO</div>
-                        </div>
-                    </div>
-            
-                    <!-- Imagen 3 -->
-                    <div class="col-12 col-md-4">
-                        <div class="image-wrapper">
-                            <img src="img/comida3.jpg" alt="Comida 3" class="img-fluid w-100 object-fit-cover rounded">
-                            <div class="overlay">CARNE</div>
-                        </div>
+                <!-- Imagen 2 -->
+                <div class="col-4">
+                    <div class="image-wrapper">
+                        <img src="img/comida2.jpeg" alt="Comida 2" class="img-fluid object-fit-cover rounded">
+                        <div class="overlay">PULPO</div>
                     </div>
                 </div>
-            </section>
-        
-        <!-- Características del Restaurante -->
-            <section class="container-fluid my-5">
-                <div class="row text-center">
-                    <div class="col-md-3 mb-4">
-                        <div class="icon-wrapper">
-                            <img src="img/sin gluten.png" alt="Sin gluten" class="img-fluid object-fit-cover"> 
-                            <p class="mt-2">100% SIN GLUTEN</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="icon-wrapper">
-                            <img src="img/cocinaicono.png" alt="Cocina asturiana" class="img-fluid object-fit-cover"> 
-                            <p class="mt-2">COCINA ASTURIANA</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="icon-wrapper">
-                            <img src="img/petfriendly.png" alt="Pet friendly" class="img-fluid object-fit-cover"> 
-                            <p class="mt-2">PET FRIENDLY</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="icon-wrapper">
-                            <img src="img/sidra.png " alt="Sidra del peñón" class="img-fluid object-fit-cover">
-                            <p class="mt-2">SIDRA DEL PEÑÓN</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
-        <!-- Sección del Restaurante -->
-            <section class="container-fluid my-5">
-                <div class="row">
-                    <!--reservar -->
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                        <p>En nuestro restaurante encontrarás una experiencia culinaria única, con platos de alta calidad y un ambiente acogedor. ¡Ven a visitarnos y disfruta de una comida inolvidable!</p>
-                        <!-- Botón -->
-                        <button class="btn btn-bd-primary mt-3" data-bs-toggle="modal" data-bs-target="#reservaModal">RESERVAR</button>
-                    </div>
-        
-                    <!-- Imagen con pegatinas -->
-                    <div class="col-md-6 position-relative">
-                        <img src="img/comida3.jpg" alt="Imagen del Restaurante" class="img-fluid">
-                        <!-- Pegatinas intento -->
-                        <div class="sticker sticker-1">Delicioso</div>
-                        <div class="sticker sticker-2">Ambiente único</div>
-                        <div class="sticker sticker-3">Familiar</div>
-                        <div class="sticker sticker-4">Top Chef</div>
-                    </div>
-                </div>
-            </section>
-        
-        <!-- Modal de Reserva -->
-            <div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="reservaModalLabel">Formulario de Reserva</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="fecha" class="form-label">Fecha de Reserva</label>
-                                    <input type="date" class="form-control" id="fecha" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="personas" class="form-label">Número de Personas</label>
-                                    <input type="number" class="form-control" id="personas" min="1" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
-                            </form>
-                        </div>
+                <!-- Imagen 3 -->
+                <div class="col-4">
+                    <div class="image-wrapper">
+                        <img src="img/comida3.jpg" alt="Comida 3" class="img-fluid object-fit-cover rounded">
+                        <div class="overlay">CARNE</div>
                     </div>
                 </div>
             </div>
-        
-        <!-- Info restaurante -->
-            <section class="container-fluid my-5">
-                <div class="row">
-                    <!-- Izquierda info -->
-                    <div class="col-md-6">
-                        <h2>CONTACTO</h2>
-                        <p><strong>Dirección:</strong> Calle Alburquerque, 31, 28010 Madrid</p>
-                        <p><strong>Teléfono:</strong> 914 48 44 14</p>
-                        <p><strong>Horario:</strong> Cocina abierta ininterrumpidamente todos los días del año de 12:00 a 23:30 h
-                        Abrimos a las 07:00 h para los desayunos</p>
-                        <p><strong>Email:</strong> reservas@llagarlallobera.es</p>
-                    </div>
-        
-                    <!-- Derecha transporte -->
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div class="d-flex flex-column">
-                            <!--Bus -->
-                            <button type="button" class="btn btn-secondary mb-3" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true"
-                                    data-bs-trigger="click" data-bs-content="<img src='img/plano-bus.jpg' alt='Plano de Bus' style='width: 100%;'>">
-                                <i class="bi bi-bus-front" style="font-size: 1.5rem;"></i> 
-                                <span class="ms-2">Líneas de Bus: x, x, x</span>
-                            </button>
-                            
-                            <!-- Metro -->
-                            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true"
-                                    data-bs-trigger="click" data-bs-content="<img src='img/plano-metro.jpg' alt='Plano de Metro' style='width: 100%;'>">
-                                <i class="bi bi-train-front" style="font-size: 1.5rem;"></i> 
-                                <span class="ms-2">Líneas de Metro: x, x, x</span>
-                            </button>
-                        </div>
-                    </div>
+        </div>
+    </div>
+
+<!-- Características del Restaurante -->
+    <section class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="icon-wrapper">
+                    <img src="img/sin gluten.png" alt="Sin gluten" class="img-fluid object-fit-cover"> 
+                    <p class="mt-2">100% SIN GLUTEN</p>
                 </div>
-            </section>
-        
-        <!-- MAPA -->
-            <section class="container-fluid map-section">
-                <iframe class="map-iframe container-fluid text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.972669790268!2d-3.702336223943109!3d40.4316040714373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297b13bf444d%3A0xb324245f429f429e!2sLlagar%20La%20Llobera!5e0!3m2!1ses!2ses!4v1730145846699!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-        
-        <!-- FOOTER -->
-            <footer>
-                <div class="container-fluid text-center text-md-start">
-                    <div class="row align-items-center">
-                        <!-- Logo y descripción -->
-                        <div class="col-md-6">
-                            <div class="footer-logo">
-                                <img src="img/logo1.png" alt="Logotipo" height="35">
-                            </div>
-                            <p class="footer-description">Descubre sabores únicos y experiencias memorables en cada rincón gastronómico que recomendamos.</p>
-                        </div>
-                        <!-- Menú -->
-                        <div class="col-md-6 text-md-end footer-nav">
-                            <a href="#">NOVEDADES</a>
-                            <a href="#">CATEGORÍA</a>
-                            <a href="#">CHEF'S KISS</a>
-                        </div>
-                    </div>
-                    <!-- Nombres :) -->
-                    <div class="footer-bottom mt-3">
-                        &copy; UDIT 2024/2025 | Elena y Irene
-                    </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="icon-wrapper">
+                    <img src="img/cocinaicono.png" alt="Cocina asturiana" class="img-fluid object-fit-cover"> 
+                    <p class="mt-2">COCINA ASTURIANA</p>
                 </div>
-            </footer>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="icon-wrapper">
+                    <img src="img/petfriendly.png" alt="Pet friendly" class="img-fluid object-fit-cover"> 
+                    <p class="mt-2">PET FRIENDLY</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="icon-wrapper">
+                    <img src="img/sidra.png " alt="Sidra del peñón" class="img-fluid object-fit-cover">
+                    <p class="mt-2">SIDRA DEL PEÑÓN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección del Restaurante -->
+    <section class="container my-5">
+        <div class="row">
+            <!--reservar -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <p>En nuestro restaurante encontrarás una experiencia culinaria única, con platos de alta calidad y un ambiente acogedor. ¡Ven a visitarnos y disfruta de una comida inolvidable!</p>
+                <!-- Botón -->
+                <button class="btn btn-bd-primary mt-3" data-bs-toggle="modal" data-bs-target="#reservaModal">RESERVAR</button>
+            </div>
+
+            <!-- Imagen con pegatinas -->
+            <div class="col-md-6 position-relative">
+                <img src="img/comida3.jpg" alt="Imagen del Restaurante" class="img-fluid">
+                <!-- Pegatinas intento -->
+                <div class="sticker sticker-1">Delicioso</div>
+                <div class="sticker sticker-2">Ambiente único</div>
+                <div class="sticker sticker-3">Familiar</div>
+                <div class="sticker sticker-4">Top Chef</div>
+            </div>
+        </div>
+    </section>
+
+<!-- Modal de Reserva -->
+    <section class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservaModalLabel">Formulario de Reserva</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de Reserva</label>
+                            <input type="date" class="form-control" id="fecha" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="personas" class="form-label">Número de Personas</label>
+                            <input type="number" class="form-control" id="personas" min="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Info restaurante -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Izquierda info -->
+            <div class="col-md-6">
+                <h2>CONTACTO</h2>
+                <p><strong>Dirección:</strong> Calle Alburquerque, 31, 28010 Madrid</p>
+                <p><strong>Teléfono:</strong> 914 48 44 14</p>
+                <p><strong>Horario:</strong> Cocina abierta ininterrumpidamente todos los días del año de 12:00 a 23:30 h
+                Abrimos a las 07:00 h para los desayunos</p>
+                <p><strong>Email:</strong> reservas@llagarlallobera.es</p>
+            </div>
+
+            <!-- Derecha transporte -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="d-flex flex-column">
+                    <!--Bus -->
+                    <button type="button" class="btn btn-secondary mb-3" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true"
+                            data-bs-trigger="click" data-bs-content="<img src='img/plano-bus.jpg' alt='Plano de Bus' style='width: 100%;'>">
+                        <i class="bi bi-bus-front" style="font-size: 1.5rem;"></i> 
+                        <span class="ms-2">Líneas de Bus: x, x, x</span>
+                    </button>
+                    
+                    <!-- Metro -->
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true"
+                            data-bs-trigger="click" data-bs-content="<img src='img/plano-metro.jpg' alt='Plano de Metro' style='width: 100%;'>">
+                        <i class="bi bi-train-front" style="font-size: 1.5rem;"></i> 
+                        <span class="ms-2">Líneas de Metro: x, x, x</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- MAPA -->
+    <section class="map-section">
+        <iframe class="map-iframe container-fluid text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.972669790268!2d-3.702336223943109!3d40.4316040714373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297b13bf444d%3A0xb324245f429f429e!2sLlagar%20La%20Llobera!5e0!3m2!1ses!2ses!4v1730145846699!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <main class="container my-5">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Sección Principal</h3>
+            <p>Este es el contenido principal de la página.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Barra Lateral</h3>
+            <p>Esta es una barra lateral con contenido adicional.</p>
+          </div>
+        </div>
+      </main>
+    
+
+      <section class="photo-gallery">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+            <div class="col">
+              <a class="gallery-item" href="https://picsum.photos/id/251/1200/800.webp">
+                <img src="https://picsum.photos/id/251/480/320.webp" class="img-fluid" alt="Lorem ipsum dolor sit amet">
+              </a>
+            </div>
+            <div class="col">
+              <a class="gallery-item" href="https://picsum.photos/id/678/1200/800.webp">
+                <img src="https://picsum.photos/id/678/480/320.webp" class="img-fluid" alt="Ipsum lorem dolor sit amet">
+              </a>
+            </div>
+            <div class="col">
+              <a class="gallery-item" href="https://picsum.photos/id/74/1200/800.webp">
+                <img src="https://picsum.photos/id/74/480/320.webp" class="img-fluid" alt="Dolor lorem ipsum sit amet">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <!-- Logo y descripción -->
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <img src="img/logo1.png" alt="Logotipo" height="35">
+                    </div>
+                    <p class="footer-description">Descubre sabores únicos y experiencias memorables en cada rincón gastronómico que recomendamos.</p>
+                </div>
+                <!-- Menú -->
+                <div class="col-md-6 text-md-end footer-nav">
+                    <a href="#">NOVEDADES</a>
+                    <a href="#">CATEGORÍA</a>
+                    <a href="#">CHEF'S KISS</a>
+                </div>
+            </div>
+            <!-- Nombres :) -->
+            <div class="footer-bottom mt-3">
+                &copy; UDIT 2024/2025 | Elena y Irene
+            </div>
+        </div>
+    </footer>
 
 <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
