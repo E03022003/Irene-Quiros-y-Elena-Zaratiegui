@@ -80,7 +80,7 @@
 <!-- PORTADA -->
     <section id="portada" class="container-fluid text-center">
         <h1>LLAGAR LA LLOBERA</h1>
-        <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image" alt="...">
+        <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image object-fit-cover" alt="...">
         <!-- Burbuja -->
         <div class="bubble" id="scrollToTop" style="display: none;">
             <span id="bubbleIcon">
@@ -97,7 +97,7 @@
                 <!-- Imagen 1 -->
                 <div class="col-4">
                     <div class="image-wrapper">
-                        <img src="img/comida1.jpg" alt="Comida 1" class="img-fluid object-fit-cover rounded">
+                        <img src="img/cachopo1.jpg" alt="Comida 1" class="img-fluid object-fit-cover rounded">
                         <div class="overlay">CACHOPO</div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
     </div>
 
 <!-- Características del Restaurante -->
-    <section class="container my-5">
+    <section class="container-fluid my-5">
         <div class="row text-center">
             <div class="col-md-3 mb-4">
                 <div class="icon-wrapper">
@@ -153,15 +153,17 @@
     <section class="container my-5">
         <div class="row">
             <!--reservar -->
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-                <p>En nuestro restaurante encontrarás una experiencia culinaria única, con platos de alta calidad y un ambiente acogedor. ¡Ven a visitarnos y disfruta de una comida inolvidable!</p>
+            <div id="info" class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <p>En nuestro restaurante encontrarás una experiencia culinaria única, con platos de alta calidad y un ambiente acogedor. ¡Ven a visitarnos y disfruta de una comida inolvidable!
+                </p>
                 <!-- Botón -->
-                <button class="btn btn-bd-primary mt-3" data-bs-toggle="modal" data-bs-target="#reservaModal">RESERVAR</button>
+                <button class="btn btn-bd-primary btn-m mt-3 btn-narrow d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#reservaModal">RESERVAR
+                </button>
             </div>
 
             <!-- Imagen con pegatinas -->
             <div class="col-md-6 position-relative">
-                <img src="img/comida3.jpg" alt="Imagen del Restaurante" class="img-fluid">
+                <img src="img/carne.png" alt="Imagen del Restaurante" class="img-fluid">
                 <!-- Pegatinas intento -->
                 <div class="sticker sticker-1">Delicioso</div>
                 <div class="sticker sticker-2">Ambiente único</div>
@@ -173,31 +175,33 @@
 
 <!-- Modal de Reserva -->
     <section class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="reservaModalLabel">Formulario de Reserva</h5>
+                    <h3 class="modal-title" id="reservaModalLabel">RESERVAR</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body custom-modal-padding">
                     <form>
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
+                            <label for="nombre" class="form-label">NOMBRE</label>
                             <input type="text" class="form-control" id="nombre" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label">EMAIL</label>
                             <input type="email" class="form-control" id="email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="fecha" class="form-label">Fecha de Reserva</label>
+                            <label for="fecha" class="form-label">FECHA DE RESERVA</label>
                             <input type="date" class="form-control" id="fecha" required>
                         </div>
                         <div class="mb-3">
-                            <label for="personas" class="form-label">Número de Personas</label>
+                            <label for="personas" class="form-label">NÚMERO DE PERSONA</label>
                             <input type="number" class="form-control" id="personas" min="1" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">CONFIRMAR LA RESERVA</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -205,81 +209,79 @@
     </section>
 
 <!-- Info restaurante -->
-    <section class="container my-5">
-        <div class="row">
-            <!-- Izquierda info -->
-            <div class="col-md-6">
-                <h2>CONTACTO</h2>
-                <p><strong>Dirección:</strong> Calle Alburquerque, 31, 28010 Madrid</p>
-                <p><strong>Teléfono:</strong> 914 48 44 14</p>
-                <p><strong>Horario:</strong> Cocina abierta ininterrumpidamente todos los días del año de 12:00 a 23:30 h
-                Abrimos a las 07:00 h para los desayunos</p>
-                <p><strong>Email:</strong> reservas@llagarlallobera.es</p>
-            </div>
-
-            <!-- Derecha transporte -->
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="d-flex flex-column">
+<section class="container my-5">
+    <h2>CONTACTO</h2>
+    <div class="row">
+        <!-- Izquierda info -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column">
+                <div class="row text-center">
                     <!--Bus -->
-                    <button type="button" class="btn btn-secondary mb-3" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true"
-                            data-bs-trigger="click" data-bs-content="<img src='img/plano-bus.jpg' alt='Plano de Bus' style='width: 100%;'>">
-                        <i class="bi bi-bus-front" style="font-size: 1.5rem;"></i> 
-                        <span class="ms-2">Líneas de Bus: x, x, x</span>
-                    </button>
-                    
+                    <div class="col-md-3 mb-4">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-train-front"style="font-size: 2rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#metroModal"></i>
+                            
+                            <p class="mt-2">Líneas de Metro: x, x, x</p>
+                        </div>
+                    </div>
                     <!-- Metro -->
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true"
-                            data-bs-trigger="click" data-bs-content="<img src='img/plano-metro.jpg' alt='Plano de Metro' style='width: 100%;'>">
-                        <i class="bi bi-train-front" style="font-size: 1.5rem;"></i> 
-                        <span class="ms-2">Líneas de Metro: x, x, x</span>
-                    </button>
+                    <div class="col-md-3 mb-4">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-bus-front" style="font-size: 2rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#busModal"></i>
+
+                            <p class="mt-2">Líneas de Bus: x, x, x</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Contacto -->
+        <div class="col-md-6">
+            <p><strong>Dirección:</strong> Calle Alburquerque, 31, 28010 Madrid</p>
+            <p><strong>Teléfono:</strong> 914 48 44 14</p>
+            <p><strong>Horario:</strong> Cocina abierta ininterrumpidamente todos los días del año de 12:00 a 23:30 h
+            Abrimos a las 07:00 h para los desayunos</p>
+            <p><strong>Email:</strong> reservas@llagarlallobera.es</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Modal Metro-->
+    <div class="modal fade" id="metroModal" tabindex="-1" aria-labelledby="metroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="metroModalLabel">Plano de Metro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="ruta/a/tu/imagen-de-plano-de-metro.jpg" alt="Plano de Metro" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bus-->
+    <div class="modal fade" id="busModal" tabindex="-1" aria-labelledby="metroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="metroModalLabel">Plano de Bus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="ruta/a/tu/imagen-de-plano-de-metro.jpg" alt="Plano de Metro" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- MAPA -->
     <section class="map-section">
         <iframe class="map-iframe container-fluid text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.972669790268!2d-3.702336223943109!3d40.4316040714373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297b13bf444d%3A0xb324245f429f429e!2sLlagar%20La%20Llobera!5e0!3m2!1ses!2ses!4v1730145846699!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
     </section>
-
-    <main class="container my-5">
-        <div class="row">
-          <div class="col-md-8">
-            <h3>Sección Principal</h3>
-            <p>Este es el contenido principal de la página.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Barra Lateral</h3>
-            <p>Esta es una barra lateral con contenido adicional.</p>
-          </div>
-        </div>
-      </main>
     
-
-      <section class="photo-gallery">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
-            <div class="col">
-              <a class="gallery-item" href="https://picsum.photos/id/251/1200/800.webp">
-                <img src="https://picsum.photos/id/251/480/320.webp" class="img-fluid" alt="Lorem ipsum dolor sit amet">
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="https://picsum.photos/id/678/1200/800.webp">
-                <img src="https://picsum.photos/id/678/480/320.webp" class="img-fluid" alt="Ipsum lorem dolor sit amet">
-              </a>
-            </div>
-            <div class="col">
-              <a class="gallery-item" href="https://picsum.photos/id/74/1200/800.webp">
-                <img src="https://picsum.photos/id/74/480/320.webp" class="img-fluid" alt="Dolor lorem ipsum sit amet">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
 <!-- FOOTER -->
     <footer>
         <div class="container text-center text-md-start">
