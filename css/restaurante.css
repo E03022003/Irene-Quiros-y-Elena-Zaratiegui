@@ -181,8 +181,13 @@ h2 {
     transform: scale(1); 
 }
 
-
 /* CARACTERÍSTICAS RESTAURANTE */
+.icon-wrapper img {
+    height: 7em;
+    width: auto;
+}
+
+/* INFO RESTAURANTE */
 .btn-narrow {
     width: 200px;
     border-radius: 10px;
@@ -193,10 +198,7 @@ h2 {
     text-align: justify;
 }
 
-.icon-wrapper img {
-    height: 7em;
-    width: auto;
-}
+
 
 /*edición botón*/
 .btn-bd-primary {
@@ -300,8 +302,19 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
+/* TRANSPORTE */
+.icon-transporte img {
+    height: 7em;
+    width: auto;
+}
 
+#transporte h2 {
+    padding-bottom: 1em;
+}
 
+#contact {
+    padding-left: 4em;
+}
 
 /* MAPA */
 .map-section {
@@ -310,9 +323,8 @@ h2 {
 }
 
 .map-iframe {
-    border: none; 
-    width: 100%; 
     height: 100%; 
+    border-radius:25px;
 }
 
 

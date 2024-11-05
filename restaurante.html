@@ -209,27 +209,26 @@
     </section>
 
 <!-- Info restaurante -->
-<section class="container my-5">
+<section id="transporte" class="container my-5">
     <h2>CONTACTO</h2>
     <div class="row">
         <!-- Izquierda info -->
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <div class="d-flex flex-column">
-                <div class="row text-center">
-                    <!--Bus -->
-                    <div class="col-md-3 mb-4">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-train-front"style="font-size: 2rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#metroModal"></i>
-                            
-                            <p class="mt-2">Líneas de Metro: x, x, x</p>
+        <div class="col-md-6 align-items-center">
+            <div class="d-flex flex-column" >
+                <div class="row text-center d-flex align-items-center">
+                    <!-- Icono de Metro -->
+                    <div class="col-6">
+                        <div class="icon-transporte">
+                            <img src="img/icono-metro.png" alt="Icono Metro" class="img-fluid object-fit-cover " data-bs-toggle="modal" data-bs-target="#metroModal"> 
+                            <p class="mt-2">METRO: x, x, x</p>
                         </div>
                     </div>
-                    <!-- Metro -->
-                    <div class="col-md-3 mb-4">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-bus-front" style="font-size: 2rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#busModal"></i>
-
-                            <p class="mt-2">Líneas de Bus: x, x, x</p>
+                    
+                    <!-- Icono de Bus -->
+                    <div class="col-6">
+                        <div class="icon-transporte">
+                            <img src="img/icono-bus.webp" alt="Icono Bus" class="img-fluid object-fit-cover" data-bs-toggle="modal" data-bs-target="#busModal"> 
+                            <p class="mt-2">BUS: x, x, x</p>
                         </div>
                     </div>
                 </div>
@@ -237,7 +236,7 @@
         </div>
 
         <!-- Contacto -->
-        <div class="col-md-6">
+        <div id="contact" class="col-md-6">
             <p><strong>Dirección:</strong> Calle Alburquerque, 31, 28010 Madrid</p>
             <p><strong>Teléfono:</strong> 914 48 44 14</p>
             <p><strong>Horario:</strong> Cocina abierta ininterrumpidamente todos los días del año de 12:00 a 23:30 h
@@ -256,7 +255,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="ruta/a/tu/imagen-de-plano-de-metro.jpg" alt="Plano de Metro" class="img-fluid">
+                    <img src="img/plano-metro-madrid-accesible.202404.png" alt="Plano de Metro" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -271,15 +270,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="ruta/a/tu/imagen-de-plano-de-metro.jpg" alt="Plano de Metro" class="img-fluid">
+                    <img src="img/EMT147.jpg" alt="Plano de linea 147" class="img-fluid">
+                    <img src="img/Linea3A.png" alt="Plano de linea 3" class="img-fluid">
+                    <img src="img/Linea40A.png" alt="Plano de linea 40" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
 
 <!-- MAPA -->
-    <section class="map-section">
-        <iframe class="map-iframe container-fluid text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.972669790268!2d-3.702336223943109!3d40.4316040714373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297b13bf444d%3A0xb324245f429f429e!2sLlagar%20La%20Llobera!5e0!3m2!1ses!2ses!4v1730145846699!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
+    <section class="map-section d-flex justify-content-center">
+        <iframe class="map-iframe container text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.972669790268!2d-3.702336223943109!3d40.4316040714373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297b13bf444d%3A0xb324245f429f429e!2sLlagar%20La%20Llobera!5e0!3m2!1ses!2ses!4v1730145846699!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
     </section>
     
 <!-- FOOTER -->
