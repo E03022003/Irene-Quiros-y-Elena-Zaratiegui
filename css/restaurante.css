@@ -141,7 +141,7 @@ h2 {
 /* GALERÍA */
 #galeria {
     margin-top: 0.5em;
-    margin-bottom: 6em;
+    margin-bottom: 3.5em;
 }
 
 #galeria h2 {
@@ -182,6 +182,12 @@ h2 {
 }
 
 /* CARACTERÍSTICAS RESTAURANTE */
+#caract {
+    border-top: 1px solid var(--color-4);
+    padding-top: 2.5em;
+    border-bottom: 1px solid var(--color-4);
+}
+
 .icon-wrapper img {
     height: 7em;
     width: auto;
@@ -198,7 +204,13 @@ h2 {
     text-align: justify;
 }
 
-
+/*CARRUSEL*/
+#carouselText .carousel-item {
+    transition: transform 3s linear; /* Ajusta la duración para suavizar el cambio */
+    border-top: 1px solid var(--color-4);
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--color-4);
+}
 
 /*edición botón*/
 .btn-bd-primary {
@@ -310,6 +322,7 @@ h2 {
 
 #transporte h2 {
     padding-bottom: 1em;
+    padding-top: 0;
 }
 
 #contact {
@@ -320,6 +333,8 @@ h2 {
 .map-section {
     height: 70vh; 
     overflow: hidden; 
+    border-top: 1px solid var(--color-4);
+    padding: 2.5em 0;
 }
 
 .map-iframe {
