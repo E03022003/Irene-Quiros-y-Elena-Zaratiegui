@@ -102,8 +102,8 @@ h2 {
 
 /* BANNER */
 
-.banner{
-    padding-top: 60px;
+#banner{
+    padding-top: 65px;
     height: 100vh;
 }
 
@@ -114,3 +114,17 @@ h2 {
 .banner-image{
     height: 32em;
 }
+
+/* Palabras deslizantes */
+.marquee {
+    overflow: hidden;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+  }
+  
+  .marquee h1{
+    font-size: 5em;
+    white-space: nowrap;
+    text-transform: uppercase
+  }
