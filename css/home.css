@@ -7,13 +7,21 @@
     --color-6: white;
 }
 
-.head {
-    width: 1411px;
-    height: 1013px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    border: 2px solid #FC4712;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
 }
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+
 
 /* TIPOGRAFÍA */
 h1 {
@@ -109,11 +117,9 @@ h2 {
 
 .img-fluid {
     width: 100%;
+    height: 75vh;
 }
 
-.banner-image{
-    height: 32em;
-}
 
 /* Palabras deslizantes */
 .marquee {
@@ -127,4 +133,11 @@ h2 {
     font-size: 5em;
     white-space: nowrap;
     text-transform: uppercase
+  }
+
+  /* carrousel fotos */
+
+  #carrousel{
+    padding-top: 65px;
+    height: 100vh;
   }
