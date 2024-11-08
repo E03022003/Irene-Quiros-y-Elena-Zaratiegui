@@ -144,8 +144,8 @@ h5 {
 /* Palabras deslizantes */
 .marquee {
     overflow: hidden;
-    border-top: 1px solid var(--color-1);
-    border-bottom: 1px solid var(--color-1);
+    border-top: 1px solid var(--color-4);
+    border-bottom: 1px solid var(--color-4);
     display: flex;
   }
   
@@ -155,7 +155,7 @@ h5 {
   }
 
   .second-marquee{
-    margin-top: 3vh;
+    margin-top: 2vh;
   }
 
   /* carrousel fotos */
@@ -208,7 +208,7 @@ h5 {
   }
 
   .carousel-control-prev:hover, .carousel-control-next:hover {
-    border-color: rgba(255, 255, 255, 0.8); /* Hacer más visible el borde al pasar el ratón */
+    border-color: rgba(255, 255, 255, 0.8);
   }
 
   .carousel-caption {
@@ -247,36 +247,39 @@ h5 {
 
 /* Elementos dentro de la cuadrícula */
 .grid-item {
-    background: #f4f4f4;
+    background: var(--color-6);
     padding: 20px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: px solid var(--color-6);
     transition: all 0.3s ease;
 }
 
 /* Filtros */
 .card {
-    border-radius: 15px;
-    overflow: hidden;
-  }
-  
-  .card .row.g-0 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    margin-bottom: 3vh;
+    border: 2px solid var(--color-4);
+    height: 100%;
   }
   
-  .card img {
-    width: 100%;
-    height: auto;
+  .card-img-left {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px 0px 0px 5px;
+    /* margin-right: 15px;  */
   }
   
   .card-body {
-    padding: 1rem;
+    flex: 1; 
   }
   
   .card-title {
     font-size: 1.25rem;
     font-weight: 600;
+    color: var(--color-4);
+    font-family:"Barlow Condensed" ;
   }
   
   .card-text {
@@ -284,17 +287,83 @@ h5 {
     color: #666;
   }
   
-  .btn-primary {
-    background-color: #ff5722;
-    border: none;
+  .boton1 {
+    background-color: transparent;
+    color: var(--color-4);
+    border:2px solid var(--color-4);
+    border-radius: 25px;
+    padding: 8px 15px;
+  }
+
+  .boton2{
+    background-color: var(--color-4);
+    color: var(--color-6);
+    border:none;
     border-radius: 25px;
     padding: 8px 15px;
   }
   
   .btn-primary:hover {
-    background-color: #e64a19;
+    background-color: var(--color-4);
+    border:2px solid var(--color-4);
   }
 
+  .boton2:hover {
+    background-color: rgb(207, 79, 20);
+    border:none;
+  }
+
+  .section-line {
+    height: 1px; 
+    background-color: var(--color-4); 
+    margin-top: 20px; 
+    width: 100%;
+  }
+
+  /* CHEF KISS */
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #subtitulo{
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: var(--color-4);
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    margin-left: 11vh;
+    text-align: left;
+  }
+
+  .card2 {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 3vh;
+    border: 2px solid var(--color-4);
+    border-radius: 30px;
+    height: 100%;
+  }
+
+  .estrellas{
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  .card-text2{
+    padding: 2rem;
+  }
+
+  #link{
+    font-weight: bolder;
+    color: var(--color-4);
+    text-decoration: underline;
+  }
 
 /* MEDIA QUERIES */
   @media (max-width: 576px) {

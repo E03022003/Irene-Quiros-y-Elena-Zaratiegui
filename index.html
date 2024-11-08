@@ -115,7 +115,7 @@
             <div class="marquee">
                 <h3>Delicioso • Único • Auténtico • Gourmet • Fresco • Sabor • Experiencia •
                     Cultura • Ritual • Estilo • Callejero • Exclusivo • Tentador • Esencia • Picante
-                    • Novedad
+                    • Novedad •
                 </h3>
             </div>
         </header>
@@ -206,28 +206,29 @@
 
         <!-- -----------CATEGORIAS--------------- -->
 <section id="Categorias" class="container-fluid">
+  <h2 id="Novedades" class="text-uppercase">Categorías</h1>
 
 <!-- Filtros -->
 <div class="container my-4">
   <div class="d-flex justify-content-start mb-3">
     <!-- Filtro de Tipo de Cocina -->
     <div class="dropdown me-3">
-      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <button class="btn btn-primary dropdown-toggle boton1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         Tipo de Cocina
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#" data-filter=".cocina1">Italiana</a></li>
         <li><a class="dropdown-item" href="#" data-filter=".cocina2">Mexicana</a></li>
         <li><a class="dropdown-item" href="#" data-filter=".cocina3">Japonesa</a></li>
-        <li><a class="dropdown-item" href="#" data-filter=".cocina4">Vegetariana</a></li>
+        <li><a class="dropdown-item" href="#" data-filter=".cocina4">Española</a></li>
       </ul>
     </div>
 
     <!-- Filtro de Mejor Valorados -->
-    <button class="btn btn-primary me-3" data-filter=".mejor-valorados">Mejor Valorados</button>
+    <button class="btn btn-primary me-3 boton1" data-filter=".mejor-valorados">Mejor Valorados</button>
 
     <!-- Filtro de Precio -->
-    <button class="btn btn-primary" data-filter=".precio">Precio</button>
+    <button class="btn btn-primary boton1" data-filter=".precio">Precio</button>
   </div>
 </div>
 
@@ -236,78 +237,125 @@
   <div class="row">
     <!-- Tarjeta 1: Cocina Italiana, Mejor Valorado -->
     <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina1 mejor-valorados">
-      <div class="card">
-        <img src="restaurant1.jpg" class="card-img-top" alt="Restaurant 1">
-        <div class="card-body">
-          <h5 class="card-title">Restaurante Italiano</h5>
-          <p class="card-text">Deliciosa comida italiana, pasta fresca y pizzas gourmet.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
-        </div>
+      <div class="card d-flex">
+          <img src="img/italiano.webp" class="card-img-left" alt="Restaurant 1">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Manifesto 13</h5>
+            <p class="card-text">Deliciosa comida italiana, pasta fresca y pizzas gourmet.</p>
+            <a href="https://manifesto13.es/" class="btn btn-primary boton2">Ver más</a>
+          </div>
       </div>
     </div>
 
     <!-- Tarjeta 2: Cocina Mexicana, Precio -->
     <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina2 precio">
-      <div class="card">
-        <img src="restaurant2.jpg" class="card-img-top" alt="Restaurant 2">
+      <div class="card d-flex">
+        <img src="img/mexicano1.jpg" class="card-img-left" alt="Restaurant 2">
         <div class="card-body">
-          <h5 class="card-title">Restaurante Mexicano</h5>
+          <h5 class="card-title text-uppercase">tepic</h5>
           <p class="card-text">Disfruta de tacos y margaritas a buen precio.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <a href="https://www.tepic.es/concepto/" class="btn btn-primary boton2">Ver más</a>
         </div>
       </div>
     </div>
 
     <!-- Tarjeta 3: Cocina Japonesa, Mejor Valorado -->
-    <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina3 mejor-valorados">
-      <div class="card">
-        <img src="restaurant3.jpg" class="card-img-top" alt="Restaurant 3">
+    <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina3 mejor-valorados precio">
+      <div class="card d-flex">
+        <img src="img/japones1.webp" class="card-img-left" alt="Restaurant 3">
         <div class="card-body">
-          <h5 class="card-title">Restaurante Japonés</h5>
+          <h5 class="card-title text-uppercase">casa pei</h5>
           <p class="card-text">Sushi fresco y auténtico, preparado por chefs japoneses.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <a href="https://www.instagram.com/casapeiplus/?hl=es" class="btn btn-primary boton2">Ver más</a>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 4: Cocina Vegetariana -->
-    <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina4">
-      <div class="card">
-        <img src="restaurant4.jpg" class="card-img-top" alt="Restaurant 4">
+    <!-- Tarjeta 4: Cocina Española, mejor valorado -->
+    <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina4 mejor-valorados">
+      <div class="card d-flex">
+        <img src="img/portada-restaurante.jpg" class="card-img-left" alt="Restaurant 4">
         <div class="card-body">
-          <h5 class="card-title">Restaurante Vegetariano</h5>
-          <p class="card-text">Comida 100% vegetariana, llena de sabor y salud.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <h5 class="card-title text-uppercase">Llagar la llobera</h5>
+          <p class="card-text">Asturiano, sidra y comida tradicional.</p>
+          <a href="restaurante.html" class="btn btn-primary boton2">Ver más</a>
         </div>
       </div>
     </div>
 
     <!-- Tarjeta 5: Cocina Mexicana -->
     <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina2">
-      <div class="card">
-        <img src="restaurant5.jpg" class="card-img-top" alt="Restaurant 5">
+      <div class="card d-flex">
+        <img src="img/mexicano2.jpg" class="card-img-left" alt="Restaurant 5">
         <div class="card-body">
-          <h5 class="card-title">Restaurante Mexicano</h5>
+          <h5 class="card-title text-uppercase">Bakan</h5>
           <p class="card-text">Comida mexicana auténtica, ideal para compartir.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <a href="https://madridsecreto.co/bakan/" class="btn btn-primary boton2">Ver más</a>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 6: Cocina Vegetariana, Mejor Valorado -->
-    <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina4 mejor-valorados">
-      <div class="card">
-        <img src="restaurant6.jpg" class="card-img-top" alt="Restaurant 6">
+    <!-- Tarjeta 6: Cocina Japonesa, Mejor Valorado -->
+    <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina3 mejor-valorados">
+      <div class="card d-flex">
+        <img src="img/japonesa2.webp" class="card-img-left" alt="Restaurant 6">
         <div class="card-body">
-          <h5 class="card-title">Restaurante Vegetariano</h5>
-          <p class="card-text">Restaurante vegetariano con platos innovadores.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <h5 class="card-title text-uppercase">robata</h5>
+          <p class="card-text">Japonés especializado en cocina a la parrilla.</p>
+          <a href="https://robata.es/robata-madrid/" class="btn btn-primary boton2">Ver más</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-        </section>
+</section>
+<div class="section-line"></div>
+
+<!-- --------chef´s kiss----------- -->
+<section id="Chefkis" class="container-fluid">
+  <h2 id="Novedades" class="text-uppercase">Chef´s kiss</h1>
+    <p id="subtitulo"> ¡Descubre las recomendaciones semanales de nuestros top Chefs!</p>
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card2 text-center p-5">
+            <div class="d-flex flex-column align-items-center">
+              <img src="img/persona1.jpg" class="profile-img mb-3" alt="Perfil 1">
+              <h5 class="card-title">Jose Manuel</h5>
+              <p class="card-text2 text-muted">"Si buscas una experiencia auténtica de la cocina asturiana, <a id="link" href="restaurante.html">Llagar la Llobera</a> es el lugar ideal. Su sidra, elaborada de forma tradicional, acompaña perfectamente sus platos caseros como el cachopo o la fabada. Un ambiente acogedor y un servicio impecable hacen que cada visita sea un verdadero placer para los sentidos. ¡No te lo puedes perder!"</p>
+              <div class="stars"> 
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-secondary">☆</span> 
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card2 text-center p-5">
+            <div class="d-flex flex-column align-items-center">
+              <img src="img/persona2.jpg" class="profile-img mb-3" alt="Perfil 2">
+              <h5 class="card-title">Vanesa</h5>
+              <p class="card-text2 text-muted">"<a id="link" href="https://bakanmadrid.com/">Bakan</a> ofrece una experiencia gastronómica excepcional con su cocina mexicana, destacando por su innovadora fusión de sabores y presentación. Los tacos, ceviches y cócteles son un verdadero deleite, pero hay que tener en cuenta que los precios son algo elevados. A pesar de ello, la calidad y el ambiente hacen que valga la pena la visita."</p>
+              <div class="stars">
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-warning">★</span>
+                <span class="estrellas text-secondary">☆</span>
+                <span class="estrellas text-secondary">☆</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
 
         <!-- JAVASCRIPT BOOTSTRAP -->
         <script

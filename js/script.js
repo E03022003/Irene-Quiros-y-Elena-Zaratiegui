@@ -97,8 +97,8 @@ $(document).ready(function() {
 
     // Filtros por botones
     $('button[data-filter]').on('click', function() {
-        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        event.preventDefault(); 
         var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue }); // Aplica el filtro
+        $grid.isotope({ filter: filterValue }); 
     });
 });
