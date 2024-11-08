@@ -154,6 +154,10 @@ h5 {
     text-transform: uppercase
   }
 
+  .second-marquee{
+    margin-top: 3vh;
+  }
+
   /* carrousel fotos */
 
   #Novedades{
@@ -229,6 +233,66 @@ h5 {
   .custom-btn:hover {
     background-color: var(--color-4);
     color: var(--color-6);
+  }
+
+  /* CATERORIAS */
+
+  /* isotope */
+  /* Contenedor de la cuadrícula */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Elementos dentro de la cuadrícula */
+.grid-item {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+/* Filtros */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .card .row.g-0 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .btn-primary {
+    background-color: #ff5722;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e64a19;
   }
 
 

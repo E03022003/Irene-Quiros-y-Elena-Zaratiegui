@@ -74,5 +74,31 @@ function Marquee(selector, speed) {
   //after window is completed load
   //1 class selector for marquee
   //2 marquee speed 0.2
-  window.addEventListener('load', Marquee('.marquee', 0.2))
-  
+  window.addEventListener('load', function() {
+    Marquee('.marquee', 0.5); // Primer marquee
+    Marquee('.second-marquee', 0.5); // Segundo marquee, usando una clase diferente
+});
+
+// FILTRADO CATEGORIAS
+
+$(document).ready(function() {
+    // Inicializar Isotope
+    var $grid = $('.row').isotope({
+        itemSelector: '.col-lg-4',  // Selecciona las tarjetas
+        layoutMode: 'fitRows'       // Organiza los elementos en filas
+    });
+
+    // Filtros
+    $('.dropdown-item').on('click', function() {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue }); // Aplica el filtro
+    });
+
+    // Filtros por botones
+    $('button[data-filter]').on('click', function() {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue }); // Aplica el filtro
+    });
+});
