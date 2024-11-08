@@ -45,6 +45,24 @@ h2 {
     padding-top: 0.2em;
 }
 
+h3 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+    color: var(--color-4);
+}
+
+h5 {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+    color: var(--color-6);
+}
+
 /* NAVBAR */
 .navbar-wrapper {
     position: fixed;
@@ -110,9 +128,11 @@ h2 {
 
 /* BANNER */
 
+
 #banner{
     padding-top: 65px;
-    height: 100vh;
+    min-height: 100vh;
+    
 }
 
 .img-fluid {
@@ -124,20 +144,110 @@ h2 {
 /* Palabras deslizantes */
 .marquee {
     overflow: hidden;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid var(--color-1);
+    border-bottom: 1px solid var(--color-1);
     display: flex;
   }
   
-  .marquee h1{
-    font-size: 5em;
+  .marquee h3{
     white-space: nowrap;
     text-transform: uppercase
   }
 
   /* carrousel fotos */
 
-  #carrousel{
-    padding-top: 65px;
-    height: 100vh;
+  #Novedades{
+    margin-left: 11vh;
+    text-align: left;
   }
+
+  #carrousel{
+    padding-top: 1em;
+  }
+
+  .carousel-inner{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4vh;
+    height: 100%;
+  }
+
+  #carousel-1{
+    padding-top: 4vh;
+    max-width: 90vw;
+    height: 70vh;
+    margin: auto;
+  }
+
+   /* controles del carrusel */
+   .carousel-control-prev, .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    border: 2px solid var(--color-6); 
+    background-color: var(--color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 10;
+  }
+
+  .carousel-control-prev {
+    left: -23px; 
+  }
+
+  .carousel-control-next {
+    right: -23px; 
+  }
+
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    border-color: rgba(255, 255, 255, 0.8); /* Hacer más visible el borde al pasar el ratón */
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .custom-btn {
+    border-radius: 25px;
+    background-color: var(--color-6);
+    color: var(--color-4); 
+    padding: 8px 17px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--color-4);
+    color: var(--color-6);
+  }
+
+
+/* MEDIA QUERIES */
+  @media (max-width: 576px) {
+    #carousel-1 {
+      height: 50vw; 
+    }
+  }
+
+  @media (max-width: 576px) and (width: 768px) {
+    #carousel-1 {
+      height: 40vw; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    #carousel-1 {
+      height: 30vw; 
+    }
+  }
+
