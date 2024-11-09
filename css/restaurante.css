@@ -188,9 +188,7 @@ h2 {
 
 /* CARACTERÍSTICAS RESTAURANTE */
 #caract {
-    border-top: 1px solid var(--color-4);
     padding-top: 2.5em;
-    border-bottom: 1px solid var(--color-4);
 }
 
 .icon-wrapper img {
@@ -205,16 +203,51 @@ h2 {
 }
 
 #info {
-    padding-right: 4em;
+    padding: 3em;
     text-align: justify;
+    border-radius: 30px;
+    border: 2px solid var(--color-4);
 }
 
+#info p {
+    padding: 0 3em;
+    padding-bottom: 1em;
+}
+
+#img-res {
+    padding-left: 2em;
+}
+
+/* FOTO COMIDA */
+.sticker {
+    position: absolute;
+    background-color:var(--color-4);
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: var(--color-6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* PEGATINAS */
+.sticker-1 { top: 10%; left: 15%; }
+.sticker-2 { top: 50%; left: 10%; }
+.sticker-3 { bottom: 20%; right: 20%; }
+.sticker-4 { top: 20%; right: 10%; }
+
+
 /*CARRUSEL*/
+#carouselText {
+    border: 2px solid var(--color-4);
+    border-radius: 30px;
+}
+
 #carouselText .carousel-item {
     transition: transform 3s linear; /* Ajusta la duración para suavizar el cambio */
-    border-top: 1px solid var(--color-4);
     padding-bottom: 1.5em;
-    border-bottom: 1px solid var(--color-4);
 }
 
 /*edición botón*/
@@ -231,30 +264,6 @@ h2 {
     --bs-btn-active-bg: var(--color-3);
     --bs-btn-active-border-color: var(--color-1);
 }
-
-
-/* FOTO COMIDA */
-.sticker {
-    position: absolute;
-    background-color:var(--color-4);
-    padding: 5px 10px;
-    border-radius: 15px;
-    color: var(--color-6);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    font-size: 2em;
-    font-family: "Barlow Condensed";
-    font-style: normal;
-    font-weight: 500;
-}
-
-
-/* PEGATINAS */
-.sticker-1 { top: 10%; left: 15%; }
-.sticker-2 { top: 50%; left: 10%; }
-.sticker-3 { bottom: 20%; right: 20%; }
-.sticker-4 { top: 20%; right: 10%; }
-
-
 
 /* MODAL */
 .custom-modal-padding {
@@ -338,8 +347,7 @@ h2 {
 .map-section {
     height: 70vh; 
     overflow: hidden; 
-    border-top: 1px solid var(--color-4);
-    padding: 2.5em 0;
+    padding-bottom: 2.5em;
 }
 
 .map-iframe {

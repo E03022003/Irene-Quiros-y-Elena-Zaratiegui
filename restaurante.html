@@ -79,7 +79,7 @@
 
 <!-- PORTADA -->
     <section id="portada" class="container-fluid text-center">
-        <h1>LLAGAR LA LLOBERA</h1>
+        <h1 data-aos="fade-up">LLAGAR LA LLOBERA</h1>
         <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image object-fit-cover" alt="...">
         <!-- Burbuja -->
         <div class="bubble" id="scrollToTop" style="display: none;">
@@ -92,10 +92,10 @@
 <!-- Galería -->
     <section  class="container-fluid">
         <div id="galeria" class="container">
-            <h2>RECOMENDACIONES</h2>
+            <h2 data-aos="fade-up">RECOMENDACIONES</h2>
             <div class="row">
                 <!-- Imagen 1 -->
-                <div class="col-4">
+                <div class="col-4" data-aos="fade-up">
                     <div class="image-wrapper">
                         <img src="img/cachopo1.jpg" alt="Comida 1" class="img-fluid object-fit-cover rounded">
                         <div class="overlay">CACHOPO</div>
@@ -103,13 +103,13 @@
                 </div>
                 <!-- Imagen 2 -->
                 <div class="col-4">
-                    <div class="image-wrapper">
+                    <div class="image-wrapper" data-aos="fade-up">
                         <img src="img/comida2.jpeg" alt="Comida 2" class="img-fluid object-fit-cover rounded">
                         <div class="overlay">PULPO</div>
                     </div>
                 </div>
                 <!-- Imagen 3 -->
-                <div class="col-4">
+                <div class="col-4" data-aos="fade-up">
                     <div class="image-wrapper">
                         <img src="img/comida3.jpg" alt="Comida 3" class="img-fluid object-fit-cover rounded">
                         <div class="overlay">CARNE</div>
@@ -150,7 +150,7 @@
     </section>
 
 <!-- Sección del Restaurante -->
-    <section class="container my-5">
+    <section id="info-res" class="container my-5">
         <div class="row">
             <!--reservar -->
             <div id="info" class="col-md-6 d-flex flex-column justify-content-center align-items-center">
@@ -162,13 +162,13 @@
             </div>
 
             <!-- Imagen con pegatinas -->
-            <div class="col-md-6 position-relative">
-                <img src="img/carne.png" alt="Imagen del Restaurante" class="img-fluid">
+            <div id="img-res" class="col-md-6 position-relative">
+                <img src="img/carne.png" alt="Imagen del Restaurante" class="img-fluid" data-aos="fade-up">
                 <!-- Pegatinas intento -->
-                <div class="sticker sticker-1">Delicioso</div>
-                <div class="sticker sticker-2">Ambiente único</div>
-                <div class="sticker sticker-3">Familiar</div>
-                <div class="sticker sticker-4">Top Chef</div>
+                <div class="sticker sticker-1" data-aos="zoom-in" >Delicioso</div>
+                <div class="sticker sticker-2" data-aos="zoom-in" >Ambiente único</div>
+                <div class="sticker sticker-3" data-aos="zoom-in" >Familiar</div>
+                <div class="sticker sticker-4" data-aos="zoom-in" >Top Chef</div>
             </div>
         </div>
     </section>
@@ -233,7 +233,7 @@
             <div class="d-flex flex-column" >
                 <div class="row text-center d-flex align-items-center">
                     <!-- Icono de Metro -->
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-up">
                         <div class="icon-transporte">
                             <img src="img/icono-metro.png" alt="Icono Metro" class="img-fluid object-fit-cover " data-bs-toggle="modal" data-bs-target="#metroModal"> 
                             <p class="mt-2">METRO: x, x, x</p>
@@ -241,7 +241,7 @@
                     </div>
                     
                     <!-- Icono de Bus -->
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-up">
                         <div class="icon-transporte">
                             <img src="img/icono-bus.webp" alt="Icono Bus" class="img-fluid object-fit-cover" data-bs-toggle="modal" data-bs-target="#busModal"> 
                             <p class="mt-2">BUS: x, x, x</p>
@@ -295,7 +295,7 @@
     </div>
 
 <!-- MAPA -->
-    <section class="map-section d-flex justify-content-center">
+    <section class="map-section d-flex justify-content-center" data-aos="fade-up">
         <iframe class="map-iframe container text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.972669790268!2d-3.702336223943109!3d40.4316040714373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297b13bf444d%3A0xb324245f429f429e!2sLlagar%20La%20Llobera!5e0!3m2!1ses!2ses!4v1730145846699!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
     </section>
     
@@ -332,6 +332,11 @@
 
 <!-- JAVASCRIPT -->
      <script src="js/script.js"></script>
+
+<!-- inicar AOS -->
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
