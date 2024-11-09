@@ -1,0 +1,1 @@
+La segunda página se encuentra en el restaurante de Llagar la Llobera, pincha en cualquiera de las secciones del index dónde sale nombrado para ir :)
