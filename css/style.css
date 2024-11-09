@@ -505,9 +505,6 @@ footer {
     }
 
 }
-
-
-
  /* Para tabletas (pantallas entre 576px y 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
     #carousel-1 {
