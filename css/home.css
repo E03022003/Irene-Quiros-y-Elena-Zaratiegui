@@ -171,12 +171,12 @@ h5 {
   /* carrousel fotos */
 
   #Novedades{
-    margin-left: 11vh;
+    margin-left: 10vh;
     text-align: left;
   }
 
   #carrousel{
-    padding-top: 1em;
+    padding-top: 5em;
   }
 
   .carousel-inner{
@@ -247,6 +247,10 @@ h5 {
   }
 
   /* CATERORIAS */
+
+  #Categorias{
+    padding-top: 11vh;
+  }
 
   /* isotope */
   /* Contenedor de la cuadrícula */
@@ -344,7 +348,7 @@ h5 {
   .section-line {
     height: 1px; 
     background-color: var(--color-4); 
-    margin-top: 20px; 
+    margin-top: 4rem; 
     width: 100%;
   }
 
@@ -354,6 +358,7 @@ h5 {
     margin-bottom: 3rem;
     min-height: 100vh;
     width: 100%;
+    padding-top: 8vh;
   }
 
   .profile-img {
@@ -445,6 +450,20 @@ footer {
   border-top: 1px solid var(--color-4);
   padding-top: 10px;
   text-align: center;
+}
+
+.nombres{
+    height: 100% !important;
+}
+
+.footer-logo img{
+    width: auto;
+}
+
+.margin{
+    margin-top: 7rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 /* MEDIA QUERIES */
