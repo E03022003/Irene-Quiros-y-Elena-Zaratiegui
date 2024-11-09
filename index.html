@@ -70,13 +70,13 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">NOVEDADES</a>
+                                <a class="nav-link active" aria-current="page" href="#carrousel">NOVEDADES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CATEGORÍA</a>
+                                <a class="nav-link" href="#Categorias">CATEGORÍA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CHEF'S KISS</a>
+                                <a class="nav-link" href="#Chefkiss">CHEF'S KISS</a>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +100,8 @@
 
         <!-- texto header -->
         <header id="banner" class="container-fluid text-center">
-            <h1 id="titulo" class="text-uppercase">Donde Sea Pero Rico</h1>
+          <div class="decoration">
+            <h1 data-aos="fade-up" id="titulo" class="text-uppercase">Donde Sea Pero Rico</h1>
             <!-- Imagen principal -->
             <div id="banner-image">
                 <!-- class="position-relative"> -->
@@ -118,13 +119,15 @@
                     • Novedad •
                 </h3>
             </div>
+
+          </div>
         </header>
 
         <!-- Carrousel fotos -->
 
         <section id="carrousel" class="container-fluid">
-            <h2 id="Novedades" class="text-uppercase">Novedades</h1>
-            <div id="carousel-1" class="carousel slide">
+            <h2 data-aos="fade-up" id="Novedades" class="text-uppercase">Novedades</h1>
+            <div data-aos="fade-up" id="carousel-1" class="carousel slide">
                 <div class="carousel-indicators">
                     <button
                         type="button"
@@ -206,10 +209,10 @@
 
         <!-- -----------CATEGORIAS--------------- -->
 <section id="Categorias" class="container-fluid">
-  <h2 id="Novedades" class="text-uppercase">Categorías</h1>
+  <h2 data-aos="fade-up" id="Novedades" class="text-uppercase">Categorías</h1>
 
 <!-- Filtros -->
-<div class="container my-4">
+<div data-aos="fade-up" class="container my-4">
   <div class="d-flex justify-content-start mb-3">
     <!-- Filtro de Tipo de Cocina -->
     <div class="dropdown me-3">
@@ -233,7 +236,7 @@
 </div>
 
 <!-- Tarjetas de restaurantes -->
-<div class="container">
+<div data-aos="fade-up" class="container">
   <div class="row">
     <!-- Tarjeta 1: Cocina Italiana, Mejor Valorado -->
     <div class="col-lg-4 col-md-6 col-sm-12 filtro cocina1 mejor-valorados">
@@ -312,17 +315,17 @@
 <div class="section-line"></div>
 
 <!-- --------chef´s kiss----------- -->
-<section id="Chefkis" class="container-fluid">
-  <h2 id="Novedades" class="text-uppercase">Chef´s kiss</h1>
-    <p id="subtitulo"> ¡Descubre las recomendaciones semanales de nuestros top Chefs!</p>
+<section id="Chefkiss" class="container-fluid">
+  <h2 data-aos="fade-up" id="Novedades" class="text-uppercase">Chef´s kiss</h1>
+    <p data-aos="fade-up" id="subtitulo"> ¡Descubre las recomendaciones semanales de nuestros top Chefs!</p>
     <div class="container my-4">
       <div class="row justify-content-center">
         <!-- Card 1 -->
-        <div class="col-md-6 mb-4">
+        <div data-aos="fade-up" class="col-md-6 mb-4">
           <div class="card2 text-center p-5">
             <div class="d-flex flex-column align-items-center">
               <img src="img/persona1.jpg" class="profile-img mb-3" alt="Perfil 1">
-              <h5 class="card-title">Jose Manuel</h5>
+              <h5 class="card-title2 text-uppercase">Jose Manuel</h5>
               <p class="card-text2 text-muted">"Si buscas una experiencia auténtica de la cocina asturiana, <a id="link" href="restaurante.html">Llagar la Llobera</a> es el lugar ideal. Su sidra, elaborada de forma tradicional, acompaña perfectamente sus platos caseros como el cachopo o la fabada. Un ambiente acogedor y un servicio impecable hacen que cada visita sea un verdadero placer para los sentidos. ¡No te lo puedes perder!"</p>
               <div class="stars"> 
                 <span class="estrellas text-warning">★</span>
@@ -336,11 +339,11 @@
         </div>
     
         <!-- Card 2 -->
-        <div class="col-md-6 mb-4">
+        <div data-aos="fade-up" class="col-md-6 mb-4">
           <div class="card2 text-center p-5">
             <div class="d-flex flex-column align-items-center">
               <img src="img/persona2.jpg" class="profile-img mb-3" alt="Perfil 2">
-              <h5 class="card-title">Vanesa</h5>
+              <h5 class="card-title2 text-uppercase">Vanesa</h5>
               <p class="card-text2 text-muted">"<a id="link" href="https://bakanmadrid.com/">Bakan</a> ofrece una experiencia gastronómica excepcional con su cocina mexicana, destacando por su innovadora fusión de sabores y presentación. Los tacos, ceviches y cócteles son un verdadero deleite, pero hay que tener en cuenta que los precios son algo elevados. A pesar de ello, la calidad y el ambiente hacen que valga la pena la visita."</p>
               <div class="stars">
                 <span class="estrellas text-warning">★</span>
@@ -357,6 +360,31 @@
     
 </section>
 
+<!-- FOOTER -->
+<footer>
+  <div class="container text-center text-md-start">
+      <div class="row align-items-center">
+          <!-- Logo y descripción -->
+          <div class="col-md-6">
+              <div class="footer-logo">
+                  <img src="img/logo1.png" alt="Logotipo" height="35">
+              </div>
+              <p class="footer-description">Descubre sabores únicos y experiencias memorables en cada rincón gastronómico que recomendamos.</p>
+          </div>
+          <!-- Menú -->
+          <div class="col-md-6 text-md-end footer-nav">
+              <a href="#carrousel">NOVEDADES</a>
+              <a href="#Categorias">CATEGORÍA</a>
+              <a href="#Chefkiss">CHEF'S KISS</a>
+          </div>
+      </div>
+      <!-- Nombres :) -->
+      <div class="footer-bottom mt-3">
+          &copy; UDIT 2024/2025 | Elena Zaratiegui e Irene Quirós
+      </div>
+  </div>
+</footer>
+
         <!-- JAVASCRIPT BOOTSTRAP -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -366,12 +394,21 @@
         <!-- JS TYPED.JS -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <!-- Isotope CDN -->
         <script
             src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 
         <!-- JAVASCRIPT -->
         <script src="js/script.js"></script>
+        
+        
+        <!-- inicar AOS -->
+        <script>
+          AOS.init();
+        </script>
 
     </body>
 </html>

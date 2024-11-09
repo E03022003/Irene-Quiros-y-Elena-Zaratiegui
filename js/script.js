@@ -102,3 +102,4 @@ $(document).ready(function() {
         $grid.isotope({ filter: filterValue }); 
     });
 });
+

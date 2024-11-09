@@ -20,7 +20,9 @@ img {
     vertical-align: middle;
 }
 
-
+.container-fluid{
+    --bs-gutter-x: 1rem !important;
+}
 
 
 /* TIPOGRAFÍA */
@@ -132,12 +134,18 @@ h5 {
 #banner{
     padding-top: 65px;
     min-height: 100vh;
-    
+}
+
+.decoration{
+    --bs-gutter-x: 2.5rem !important;
+    border: 2px solid var(--color-4);
+    border-top: 0px;
+    border-radius: 0px 0px 25px 25px;
 }
 
 .img-fluid {
     width: 100%;
-    height: 75vh;
+    height: 61vh;
 }
 
 
@@ -145,17 +153,19 @@ h5 {
 .marquee {
     overflow: hidden;
     border-top: 1px solid var(--color-4);
-    border-bottom: 1px solid var(--color-4);
+    border-bottom: none;
     display: flex;
   }
   
   .marquee h3{
     white-space: nowrap;
-    text-transform: uppercase
+    text-transform: uppercase;
+
   }
 
   .second-marquee{
     margin-top: 2vh;
+    border-bottom: 1px solid var(--color-4);
   }
 
   /* carrousel fotos */
@@ -209,6 +219,7 @@ h5 {
 
   .carousel-control-prev:hover, .carousel-control-next:hover {
     border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   }
 
   .carousel-caption {
@@ -322,6 +333,12 @@ h5 {
 
   /* CHEF KISS */
 
+  #Chefkiss{
+    margin-bottom: 3rem;
+    min-height: 100vh;
+    width: 100%;
+  }
+
   .profile-img {
     width: 100px;
     height: 100px;
@@ -348,6 +365,11 @@ h5 {
     border: 2px solid var(--color-4);
     border-radius: 30px;
     height: 100%;
+    transition: box-shadow 0.3s ease; /* Suaviza la transición de la sombra */
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Sombra más grande al pasar el ratón */
   }
 
   .estrellas{
@@ -364,6 +386,54 @@ h5 {
     color: var(--color-4);
     text-decoration: underline;
   }
+
+  .card-title2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-4);
+    font-family:"Barlow Condensed" ;
+    font-size: 2rem;
+  }
+ 
+  /* FOOTER */
+footer {
+    background-color: var(--bs-white); 
+    color: var(--color-4);
+    padding: 20px 0;
+    border-radius: 0px 0px 25px 25px;
+    border: 2px solid var(--color-4);
+    margin-bottom: 0.5em;
+
+    margin-top: 0;
+}
+
+.footer-nav a {
+    color: var(--color-4);
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--color-5);
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    color: var(--color-4);
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+    color: var(--color-4);
+    border-top: 1px solid var(--color-4);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-logo img{
+    width: auto;
+}
 
 /* MEDIA QUERIES */
   @media (max-width: 576px) {

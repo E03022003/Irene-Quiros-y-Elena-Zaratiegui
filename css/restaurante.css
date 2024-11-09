@@ -13,6 +13,11 @@
     scroll-behavior: smooth;
 }
 
+.container-fluid{
+     --bs-gutter-x: 1rem !important; /*he añadido esto para que coincidan
+                                     justo las lineas del banner :) */
+}
+
 /* TIPOGRAFÍA */
 h1 {
     text-align: center;
@@ -351,7 +356,6 @@ footer {
     border-radius: 0px 0px 25px 25px;
     border: 2px solid var(--color-4);
     margin-bottom: 0.5em;
-
     margin-top: 0;
 }
 
