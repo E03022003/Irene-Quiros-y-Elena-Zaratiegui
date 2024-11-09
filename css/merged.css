@@ -128,7 +128,20 @@ h5 {
     opacity: 1;
 }
 
-/* -------------------------------------------PAGINA PRINCIPAL (Irene) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------PAGINA PRINCIPAL (Irene) */
 
 /* BANNER */
 
@@ -354,77 +367,6 @@ h5 {
     width: 100%;
   }
 
-  /* CHEF KISS */
-
-  #Chefkiss{
-    margin-bottom: 3rem;
-    min-height: 100vh;
-    width: 100%;
-    padding-top: 8vh;
-  }
-
-  .profile-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  #subtitulo{
-    font-family: "Barlow Condensed";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5em;
-    color: var(--color-4);
-    padding-top: 0.2em;
-    padding-bottom: 1em;
-    margin-left: 11vh;
-    text-align: left;
-  }
-
-  .card2 {
-    display: flex;
-    flex-direction: column; 
-    margin-bottom: 3vh;
-    border: 2px solid var(--color-4);
-    border-radius: 30px;
-    height: 100%;
-    transition: box-shadow 0.3s ease; /* Suaviza la transición de la sombra */
-  }
-  
-  .card2:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Sombra más grande al pasar el ratón */
-  }
-
-  .estrellas{
-    font-size: 1.5rem;
-    display: inline-block;
-  }
-
-  .card-text2{
-    padding: 2rem;
-  }
-
-  #link{
-    font-weight: bolder;
-    color: var(--color-4);
-    text-decoration: underline;
-  }
-
-  .card-title2{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-4);
-    font-family:"Barlow Condensed" ;
-    font-size: 2rem;
-  }
-
-  .container3{
-    height: 100vh;
-  }
- 
- 
-
 /* MEDIA QUERIES */
 
 /* Para móviles (pantallas < 576px) */
@@ -497,7 +439,95 @@ h5 {
 
 }
 
-/*----------------------------------------------------- PAGINA RESTAURANTE (helena) */
+
+
+  /* CHEF KISS */
+
+  #Chefkiss{
+    margin-bottom: 3rem;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 8vh;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #subtitulo{
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: var(--color-4);
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    margin-left: 11vh;
+    text-align: left;
+  }
+
+  .card2 {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 3vh;
+    border: 2px solid var(--color-4);
+    border-radius: 30px;
+    height: 100%;
+    transition: box-shadow 0.3s ease; 
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); 
+  }
+
+  .estrellas{
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  .card-text2{
+    padding: 2rem;
+  }
+
+  #link{
+    font-weight: bolder;
+    color: var(--color-4);
+    text-decoration: underline;
+  }
+
+  .card-title2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-4);
+    font-family:"Barlow Condensed" ;
+    font-size: 2rem;
+  }
+
+  .container3{
+    height: 100vh;
+  }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------- PAGINA RESTAURANTE (helena) */
 
 /* PORTADA */
 #portada {
