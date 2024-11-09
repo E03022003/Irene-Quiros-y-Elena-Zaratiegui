@@ -416,6 +416,10 @@ h5 {
     font-family:"Barlow Condensed" ;
     font-size: 2rem;
   }
+
+  .container3{
+    height: 100vh;
+  }
  
  /* FOOTER */
 footer {
@@ -461,27 +465,82 @@ footer {
 }
 
 .margin{
-    margin-top: 7rem;
+    margin-top: 4rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
 /* MEDIA QUERIES */
-  @media (max-width: 576px) {
+
+/* Para móviles (pantallas < 576px) */
+@media (max-width: 576px) {
     #carousel-1 {
-      height: 50vw; 
+      height: 62vw;
     }
+    #titulo {
+        font-size: 4rem;
+    }
+    #Novedades {
+        margin-left: 3vh;
+    }
+    .img-fluid {
+        height: 73vh;
+    }
+
+    .carousel-caption {
+        top: 43%;
+    }
+
+    .card-img-left {
+        height: 170px;
+    
+    }
+
+    #subtitulo {
+        margin-left: 3vh;
+    }
+
+    .container3{
+        height: 78rem;
+    }
+
+}
+
+
+
+ /* Para tabletas (pantallas entre 576px y 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    #carousel-1 {
+      height: 46vw;
+    }
+
+    #titulo{
+        font-size: 5rem;
+    }
+
+    .img-fluid {
+        height: 73vh;
   }
 
-  @media (max-width: 576px) and (width: 768px) {
-    #carousel-1 {
-      height: 40vw; 
-    }
-  }
+  #Novedades {
+    margin-left: 5vh;
+}
 
-  @media (max-width: 768px) {
-    #carousel-1 {
-      height: 30vw; 
-    }
-  }
+.second-marquee {
+    margin-top: 9vh;
+}
+.container3{
+    height: 55rem;
+}
+#Categorias {
+    padding-top: 6vh;
+}
+.card-img-left {
+    height: 265px;
 
+}
+#subtitulo {
+    margin-left: 5vh;
+}
+
+}
