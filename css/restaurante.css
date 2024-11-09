@@ -343,6 +343,11 @@ h2 {
     padding-left: 4em;
 }
 
+/* MODAL TRANSPORTE */
+#transporte-img img {
+    height: 55em;
+}
+
 /* MAPA */
 .map-section {
     height: 70vh; 

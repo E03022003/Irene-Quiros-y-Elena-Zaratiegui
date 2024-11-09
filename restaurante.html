@@ -124,25 +124,25 @@
         <div class="row text-center">
             <div class="col-md-3 mb-4">
                 <div class="icon-wrapper">
-                    <img src="img/sin gluten.png" alt="Sin gluten" class="img-fluid object-fit-cover"> 
+                    <img src="img/icono-3-singluten.png" alt="Sin gluten" class="img-fluid object-fit-cover"> 
                     <p class="mt-2">100% SIN GLUTEN</p>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="icon-wrapper">
-                    <img src="img/cocinaicono.png" alt="Cocina asturiana" class="img-fluid object-fit-cover"> 
+                    <img src="img/icono-1-cocina.png" alt="Cocina asturiana" class="img-fluid object-fit-cover"> 
                     <p class="mt-2">COCINA ASTURIANA</p>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="icon-wrapper">
-                    <img src="img/petfriendly.png" alt="Pet friendly" class="img-fluid object-fit-cover"> 
+                    <img src="img/icono-petfriendly.png" alt="Pet friendly" class="img-fluid object-fit-cover"> 
                     <p class="mt-2">PET FRIENDLY</p>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="icon-wrapper">
-                    <img src="img/sidra.png " alt="Sidra del peñón" class="img-fluid object-fit-cover">
+                    <img src="img/icono-4-sidra.png" alt="Sidra del peñón" class="img-fluid object-fit-cover">
                     <p class="mt-2">SIDRA DEL PEÑÓN</p>
                 </div>
             </div>
@@ -235,16 +235,16 @@
                     <!-- Icono de Metro -->
                     <div class="col-6" data-aos="fade-up">
                         <div class="icon-transporte">
-                            <img src="img/icono-metro.png" alt="Icono Metro" class="img-fluid object-fit-cover " data-bs-toggle="modal" data-bs-target="#metroModal"> 
-                            <p class="mt-2">METRO: x, x, x</p>
+                            <img src="img/icono-6-metro.png" alt="Icono Metro" class="img-fluid object-fit-cover " data-bs-toggle="modal" data-bs-target="#metroModal"> 
+                            <p class="mt-2">METRO: 1, 2, 4, 5 y 10</p>
                         </div>
                     </div>
                     
                     <!-- Icono de Bus -->
                     <div class="col-6" data-aos="fade-up">
                         <div class="icon-transporte">
-                            <img src="img/icono-bus.webp" alt="Icono Bus" class="img-fluid object-fit-cover" data-bs-toggle="modal" data-bs-target="#busModal"> 
-                            <p class="mt-2">BUS: x, x, x</p>
+                            <img src="img/icono-5.png" alt="Icono Bus" class="img-fluid object-fit-cover" data-bs-toggle="modal" data-bs-target="#busModal"> 
+                            <p class="mt-2">BUS: 147, 3 y 40</p>
                         </div>
                     </div>
                 </div>
@@ -264,13 +264,13 @@
 
     <!-- Modal Metro-->
     <div class="modal fade" id="metroModal" tabindex="-1" aria-labelledby="metroModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="metroModalLabel">Plano de Metro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center">
+                <div id="transporte-img" class="modal-body text-center">
                     <img src="img/plano-metro-madrid-accesible.202404.png" alt="Plano de Metro" class="img-fluid">
                 </div>
             </div>
@@ -279,20 +279,29 @@
 
     <!-- Modal Bus-->
     <div class="modal fade" id="busModal" tabindex="-1" aria-labelledby="metroModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="metroModalLabel">Plano de Bus</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center">
-                    <img src="img/EMT147.jpg" alt="Plano de linea 147" class="img-fluid">
-                    <img src="img/Linea3A.png" alt="Plano de linea 3" class="img-fluid">
-                    <img src="img/Linea40A.png" alt="Plano de linea 40" class="img-fluid">
+                <div id="transporte-img" class="modal-body">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <img src="img/EMT147.jpg" alt="Plano de linea 147" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/Linea3A.png" alt="Plano de linea 3" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="img/Linea40A.png" alt="Plano de linea 40" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
 <!-- MAPA -->
     <section class="map-section d-flex justify-content-center" data-aos="fade-up">
