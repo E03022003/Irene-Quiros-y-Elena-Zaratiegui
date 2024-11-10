@@ -482,8 +482,10 @@ h5 {
 }
 
 .background-image {
-    max-height: 75vh;
+    max-height: 60vh;
     width: 100%;
+    background-color: blueviolet;
+    border-radius: 40px;
 }
 
 /* BURBUJA */
