@@ -64,66 +64,69 @@ h5 {
 }
 
 /* NAVBAR */
+/* Mantén estos estilos generales del navbar */
 .navbar-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--color-6);
-    height: 75px;
-    width: 100%;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-6);
+  height: 75px;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar {
-    z-index: 1000; 
-    border-radius: 25px 25px 0px 0px;
-    border: 2px solid var(--color-4);
-    margin: 0.5em;
+  z-index: 1000; 
+  border-radius: 25px 25px 0px 0px;
+  border: 2px solid var(--color-4);
+  margin: 0.5em;
 }
 
 .navbar .nav-link {
-    color: var(--color-4);
+  color: var(--color-4);
 }
 
 .navbar .nav-link.active {
-    color: var(--color-5); 
+  color: var(--color-5); 
 }
 
 .navbar .nav-link:hover {
-    color: var(--color-5); 
+  color: var(--color-5); 
 }
 
+/* Estilos para el formulario de búsqueda */
 #search-form {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 #search-icon {
-    z-index: 2; 
-    background: none;
-    border: none;
-    cursor: pointer;
+  z-index: 2; 
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 #search-input {
-    position: absolute;
-    right: 0;
-    width: 0;
-    transition: width 0.3s ease;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid var(--color-4);
-    padding: 5px;
-    outline: none;
-    color: var(--color-5);
-    opacity: 0;
-    z-index: 1; 
+  position: absolute;
+  right: 0;
+  width: 0;
+  transition: width 0.3s ease;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-4);
+  padding: 5px;
+  outline: none;
+  color: var(--color-5);
+  opacity: 0;
+  z-index: 1; 
 }
 
+/* Expande el campo de búsqueda al hacer clic */
 #search-input.active {
-    width: 200px; /* Ancho abierto */
-    opacity: 1;
+  width: 200px;
+  opacity: 1;
 }
 
 /* -------------------------------------------PAGINA PRINCIPAL (Irene) */
@@ -421,79 +424,6 @@ h5 {
     height: 100vh;
   }
  
- 
-
-/* MEDIA QUERIES */
-
-/* Para móviles (pantallas < 576px) */
-@media (max-width: 576px) {
-    #carousel-1 {
-      height: 62vw;
-    }
-    #titulo {
-        font-size: 4rem;
-    }
-    #Novedades {
-        margin-left: 3vh;
-    }
-    .img-fluid {
-        height: 73vh;
-    }
-
-    .carousel-caption {
-        top: 43%;
-    }
-
-    .card-img-left {
-        height: 170px;
-    
-    }
-
-    #subtitulo {
-        margin-left: 3vh;
-    }
-
-    .container3{
-        height: 78rem;
-    }
-
-}
- /* Para tabletas (pantallas entre 576px y 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-    #carousel-1 {
-      height: 46vw;
-    }
-
-    #titulo{
-        font-size: 5rem;
-    }
-
-    .img-fluid {
-        height: 73vh;
-  }
-
-  #Novedades {
-    margin-left: 5vh;
-}
-
-.second-marquee {
-    margin-top: 9vh;
-}
-.container3{
-    height: 55rem;
-}
-#Categorias {
-    padding-top: 6vh;
-}
-.card-img-left {
-    height: 265px;
-
-}
-#subtitulo {
-    margin-left: 5vh;
-}
-
-}
 
 /*----------------------------------------------------- PAGINA RESTAURANTE (Elena) */
 
@@ -816,3 +746,134 @@ footer {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
   }
+
+
+  /* MEDIA QUERIES */
+
+/* HOMEPAGE */
+
+/* Para móviles (pantallas < 576px) */
+@media (max-width: 576px) {
+  #carousel-1 {
+    height: 62vw;
+  }
+  #titulo {
+      font-size: 4rem;
+  }
+  #Novedades {
+      margin-left: 3vh;
+  }
+  .img-fluid {
+      height: 73vh;
+  }
+
+  .carousel-caption {
+      top: 43%;
+  }
+
+  .card-img-left {
+      height: 170px;
+  
+  }
+
+  #subtitulo {
+      margin-left: 3vh;
+  }
+
+  .container3{
+      height: 78rem;
+  }
+
+}
+/* Para tabletas (pantallas entre 576px y 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  #carousel-1 {
+    height: 46vw;
+  }
+
+  #titulo{
+      font-size: 5rem;
+  }
+
+  .img-fluid {
+      height: 73vh;
+  }
+
+  #Novedades {
+    margin-left: 5vh;
+  }
+
+  .second-marquee {
+    margin-top: 9vh;
+  }
+  .container3{
+    height: 55rem;
+  }
+  #Categorias {
+    padding-top: 6vh;
+  }
+  .card-img-left {
+    height: 265px;
+
+  }
+  #subtitulo {
+    margin-left: 5vh;
+  }
+}
+
+/* RESTAURANTE */
+@media (max-width: 1180px) {
+  #titulo {
+    font-size: 9em;
+  }
+
+  #portada {
+    height: 95vh;
+  }
+
+  .sticker {
+    padding: 3px 8px;
+    font-size: 1.5em;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .sticker-2 { 
+    top: 60%; 
+    left: 10%;
+  }
+
+  #carouselText .carousel-item h2 {
+    font-size: 4em;
+  }
+
+  #transp-modal {
+    max-width: 90%; 
+    width: 90%;
+}
+
+  #transporte-img img {
+    height: 45em;
+  }
+}
+
+@media (max-width: 1170px) {
+  #titulo {
+    font-size: 8em;
+  }
+
+  #portada {
+    height: 85vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #search-input {
+      display: inline-block;
+      width: auto;
+      opacity: 1;
+      position: relative; /* Elimina la posición absoluta en pantallas grandes */
+  }
+}
+

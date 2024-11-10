@@ -35,7 +35,6 @@
 <body>
 
     <header>
-        <!-- Navbar -->
         <div class="navbar-wrapper">
             <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
                 <div class="container-fluid">
@@ -44,33 +43,42 @@
                         <img src="img/logo1.png" alt="Logotipo" height="35">
                     </a>
     
-                    <!-- Botón hamburguesa -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <!-- Botones a la derecha (Buscar y Menú Hamburguesa) -->
+                    <div class="d-flex align-items-center">
+                        <!-- Lupa -->
+                        <form class="d-flex align-items-center me-2" id="search-form">
+                            <button class="btn" id="search-icon" type="button">
+                                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
+                            </button>
+                            <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
+                        </form>
     
-                    <!-- Botones -->
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#carrousel">NOVEDADES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Categorias">CATEGORÍA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Chefkiss">CHEF'S KISS</a>
-                            </li>
-                        </ul>
+                        <!-- Botón hamburguesa para activar el offcanvas -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
     
-                    <!-- Lupa -->
-                    <form class="d-flex align-items-center" id="search-form">
-                        <button class="btn" id="search-icon" type="button">
-                            <i class="bi bi-search" style="font-size: 1.5rem; color: var(--color-4);"></i>
-                        </button>
-                        <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
-                    </form>
+                    <!-- Offcanvas para el menú lateral -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#carrousel">NOVEDADES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Categorias">CATEGORÍA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Chefkiss">CHEF'S KISS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -79,7 +87,7 @@
 
 <!-- PORTADA -->
     <section id="portada" class="container-fluid text-center">
-        <h1 data-aos="fade-up">LLAGAR LA LLOBERA</h1>
+        <h1 id="titulo" data-aos="fade-up">LLAGAR LA LLOBERA</h1>
         <img id="img-portada" src="img/portada-restaurante.jpg" class="img-fluid background-image object-fit-cover" alt="...">
         <!-- Burbuja -->
         <div class="bubble" id="scrollToTop" style="display: none;">
@@ -269,14 +277,14 @@
 
     <!-- Modal Metro-->
     <div class="modal fade" id="metroModal" tabindex="-1" aria-labelledby="metroModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div id="transp-modal" class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="metroModalLabel">Plano de Metro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div id="transporte-img" class="modal-body text-center">
-                    <img src="img/plano-metro-madrid-accesible.202404.png" alt="Plano de Metro" class="img-fluid">
+                    <img src="img/plano-metro-madrid-accesible.202404.png" alt="Plano de Metro" class="img-fluid object-fit-cover">
                 </div>
             </div>
         </div>
@@ -284,7 +292,7 @@
 
     <!-- Modal Bus-->
     <div class="modal fade" id="busModal" tabindex="-1" aria-labelledby="metroModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div id="transp-modal" class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="metroModalLabel">Plano de Bus</h5>
@@ -293,13 +301,13 @@
                 <div id="transporte-img" class="modal-body">
                     <div class="row text-center">
                         <div class="col-4">
-                            <img src="img/EMT147.jpg" alt="Plano de linea 147" class="img-fluid">
+                            <img src="img/EMT147.jpg" alt="Plano de linea 147" class="img-fluid object-fit-cover">
                         </div>
                         <div class="col-4">
-                            <img src="img/Linea3A.png" alt="Plano de linea 3" class="img-fluid">
+                            <img src="img/Linea3A.png" alt="Plano de linea 3" class="img-fluid object-fit-cover">
                         </div>
                         <div class="col-4">
-                            <img src="img/Linea40A.png" alt="Plano de linea 40" class="img-fluid">
+                            <img src="img/Linea40A.png" alt="Plano de linea 40" class="img-fluid object-fit-cover">
                         </div>
                     </div>
                 </div>
