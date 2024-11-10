@@ -64,7 +64,6 @@ h5 {
 }
 
 /* NAVBAR */
-/* Mantén estos estilos generales del navbar */
 .navbar-wrapper {
   position: fixed;
   top: 0;
@@ -76,7 +75,7 @@ h5 {
 }
 
 .navbar {
-  z-index: 1000; 
+  z-index: 1000;
   border-radius: 25px 25px 0px 0px;
   border: 2px solid var(--color-4);
   margin: 0.5em;
@@ -87,14 +86,14 @@ h5 {
 }
 
 .navbar .nav-link.active {
-  color: var(--color-5); 
+  color: var(--color-5);
 }
 
 .navbar .nav-link:hover {
-  color: var(--color-5); 
+  color: var(--color-5);
 }
 
-/* Estilos para el formulario de búsqueda */
+/* El contenedor de la lupa y el campo de búsqueda */
 #search-form {
   position: relative;
   display: flex;
@@ -123,11 +122,58 @@ h5 {
   z-index: 1; 
 }
 
-/* Expande el campo de búsqueda al hacer clic */
 #search-input.active {
-  width: 200px;
+  width: 200px; /* Ancho abierto */
   opacity: 1;
 }
+
+
+
+.navbar-toggler {
+  border: 2px solid var(--color-4);
+}
+
+.navbar-toggler:hover {
+  box-shadow: 0 4px 10px rgba(255, 157, 0, 0.412);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.offcanvas {
+  border-radius: 25px;
+  border: 2px solid var(--color-4);
+  height: 50%;
+}
+
+.offcanvas-header {
+  background-color: var(--color-5);
+  border: 2px solid var(--color-4);
+  border-top: 0;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#offcanvasNavbarLabel {
+  color: var(--color-4);
+}
+
+.offcanvas-body {
+  border: 2px solid var(--color-4);
+  border-top: 0;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.offcanvas .nav-link:hover {
+  color: var(--color-5);
+}
+
+.offcanvas .nav-link.active {
+  color: var(--color-5);
+}
+
+
 
 /* -------------------------------------------PAGINA PRINCIPAL (Irene) */
 
@@ -868,12 +914,50 @@ footer {
   }
 }
 
-@media (min-width: 992px) {
-  #search-input {
-      display: inline-block;
-      width: auto;
-      opacity: 1;
-      position: relative; /* Elimina la posición absoluta en pantallas grandes */
+/* Media Query para pantallas pequeñas */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none; /* Ocultar el menú de navegación original */
+  }
+
+  .navbar-toggler {
+    display: block; /* Mostrar el botón hamburguesa */
+  }
+
+  .offcanvas {
+    width: 250px; /* Ajusta el tamaño del offcanvas */
+  }
+
+  #search-form {
+    display: none; /* Ocultar el buscador en el navbar cuando se activa el offcanvas */
   }
 }
 
+/* Media Query para pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none; /* Ocultar botón hamburguesa */
+  }
+
+  #search-input {
+    display: block; /* Mostrar el buscador de forma tradicional */
+    position: relative;
+    width: 200px;
+    opacity: 1;
+  }
+
+  .offcanvas {
+    display: none; /* El offcanvas no se muestra en pantallas grandes */
+  }
+
+  /* Estilo para la disposición correcta en pantallas grandes */
+  .navbar-collapse {
+    display: flex !important; /* Mostrar las opciones del menú en pantallas grandes */
+    justify-content: center; /* Centrar las opciones del menú */
+  }
+
+  /* Contenedor del buscador a la derecha */
+  .d-flex {
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+  }
+}
