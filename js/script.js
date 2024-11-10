@@ -1,36 +1,9 @@
 // NAVBAR
-/* $(document).ready(function () {
-    // Al hacer clic en el icono de búsqueda
-    $('#search-icon').on('click', function (event) {
-        event.stopPropagation();
-        const searchInput = $('#search-input');
-
-        // Alterna la visibilidad del input
-        searchInput.toggleClass('active');
-        if (searchInput.hasClass('active')) {
-            searchInput.focus();
-        }
-    });
-
-    // Cierra el campo de búsqueda al hacer clic fuera de él
-    $(document).on('click', function (event) {
-        if (!$(event.target).closest('#search-form').length) {
-            $('#search-input').removeClass('active');
-        }
-    });
-}); */
-
 $(document).ready(function() {
-    // Mostrar/ocultar barra de búsqueda al hacer clic en el icono de lupa
     $('#search-icon').on('click', function() {
         $('.search-bar').toggleClass('active');
     });
 });
-
-
-
-
-
 
 // BURBUJA PARA BAJAR Y SUBIR
 $(document).ready(function() {
